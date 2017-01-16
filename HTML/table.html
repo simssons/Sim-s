@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<!-- 표 -->
+<table border="1" width="100%" summary="3강의실 스마티웹앱반입니다.">
+  <!-- 표제목 -->
+<caption>시간표</caption>
+<!-- 표셀크기조정 -->
+<colgroup>
+  <col width="100"/>
+  <col width="200"/>
+  <col width=/>
+  <col />
+  <col />
+
+</colgroup>
+
+
+
+  <!-- 테이블머릿말 -->
+  <thead>
+<tr>
+    <th scope="col" id="product">품목</th>
+    <th scope="col" id="price">단가</th>
+    <th scope="col" id="ea">수량</th>
+    <th scope="col" id="person">작업자</th>
+    <th scope="col" id="etc">비고</th>
+    </tr>
+  </thead>
+
+  <!-- 테이블 information -->
+  <tbody>
+<tr>
+    <td rowspan="2" scope="rowgroup" id="titlesub">title1</td>
+    <td>title2</td>
+    <td>title3</td>
+    <td headers="price person title1 titlesub  ">title4</td>
+    <td>title5</td>
+</tr>
+<tr>
+    <td>title1</td>
+    <td>title2</td>
+    <td>title3</td>
+    <td>title4</td>
+
+</tr>
+<tr>
+    <td>title1</td>
+    <td>title2</td>
+    <td>title3</td>
+    <td>title4</td>
+    <td>title5</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
+table>caption+(colgroup>col[width=""]*4)+(thead>tr>th{text}*4)+(tbody>tr*5>td{text}*4)
+
+table[border="10"]>caption["멍청이"]+colgroup>col[width="20"]*4)+(thead>tr>th{th}*4)+(tbody>tr*5>td{td다}*4)
