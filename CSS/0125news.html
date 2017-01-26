@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 <style>
+  body{ background: url(http://static.naver.net/newsstand/img/20121231/bg_bd.png); }
 
   *{margin:0; padding:0;}
   ul,ol{list-style:none;}
@@ -13,15 +14,16 @@
   img{vertical-align: top;}
 
 
-  .wrap{outline:1px #F00 solid; width:900px; height: 540px; margin: 10px auto; padding: 0 25px;}
-  header{outline:1px #F00 solid; height:111px; margin: 0 30px 20px ; border-bottom-style: solid;}
+  .wrap{outline:1px #F00 solid; width:900px; height: 540px; margin: 10px auto; padding: 0 25px; background-image: url(http://static.naver.net/newsstand/img/20121231/bg_panel.png); }
+  header{outline:1px #F00 solid; height:110px; margin: 0 30px 20px ; padding: 12px 0 0; border-bottom-style: solid;}
   section{outline:1px #F00 solid; height:394px; margin: 0 30px ;}
   h1{margin:0; float:left;}
   header article{float:right; margin-top: 20px;}
-  .bg{ background-image: url(../image/llist.png); background-repeat: no-repeat; background-color: transparent;}
-  .llist{ width: 7px; height: 8px; background-position: 0 0 ;}
 
-  .btng{clear:left; padding: 20px 0 0 0;  font-size: 11px ;}
+  .bg{ background-image: url(../image/llist.png); background-repeat: no-repeat; background-color: transparent;}
+  .llist{ width: 7px; height: 8px; background-position: 0 0 ; padding-top: 2px;}
+  .btng{clear:left; padding: 15px 0 0 0;  font-size: 11px ;}
+
   .lc{outline:1px #F00 solid; width:510px; height: 394px; float:left; }
   .lt{outline:1px #F00 solid; height:auto; margin-bottom: 20px;}
   .lt .thumb{outline: 1px #F00 solid; width: 200px; height: 110px; float:left; }
@@ -31,29 +33,24 @@
   .lt li + li {outline: 1px #F00 solid; height:23px; margin: 0 0 3px 220px; padding-left: 10px ; display: block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-size: 13px; }
   .lt .ltcol span{color:rgb(250, 167, 69);}
   .lt .ltcol {outline: 1px #F00 solid; height: 28px; margin-left: 220px; font-size: 13px; padding-top: 5px; background-color: rgb(235, 235, 235); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; text-align: center;  }
-
-  .lb{outline: 1px #F00 solid; height:auto; }
+  .lb{outline: 1px #F00 solid; height:188px; }
   .lb .lbl{outline: 1px #F00 solid; width: 295px; height:auto; font-size: 13px; float:left;}
   .lb .lbl li{margin-bottom: 5px;}
   .lb .lbl .lblt{margin-bottom: 12px;}
   .lb .lbl .lblb{margin-bottom: 12px;}
-
   .lb .lbr{outline: 1px #F00 solid; width:200px; margin-left: 305px; height: auto;}
   .lb .lbr .lbr_thumbs{outline: 1px #F00 solid; height: auto; width:110%; font-size: 12px;}
   .lb .lbr .lbr_thumbs ul{outline: 1px #F00 solid; width:110%;}
   .lb .lbr .lbr_thumb1{outline: 1px #F00 solid; width:95px; height:114px; margin-right: 10px; font-size: 12px; float:left; overflow:hidden; text-overflow:ellipsis; }
   .lb .lbr .lbr_thumb2{outline: 1px #F00 solid; width:95px; height:114px; margin-right: 10px; font-size: 12px; float:left; overflow:hidden; text-overflow:ellipsis;}
-
   .lb .lbr_thumbs .t1_span{outline: 1px #F00 solid; width: 95px; height: 30px;}
   .lb .lbr_thumbs .t2_span{outline: 1px #F00 solid; width: 95px; height: 30px;}
   .lb .lb_imgsize{outline: 1px #F00 solid; width: 95px; height: 80px;}
   .lb .lb_imgsize img{width: 100% ; height:100%;}
-
   .lb .lbrb1{outline: 1px #F00 solid; height:auto; font-size: 13px; margin-top: 12px; float:left;}
   .lb .lbrb1 span{color: rgb(77, 180, 224); }
   .lb .lbrb2{outline: 1px #F00 solid; height:auto; font-size: 13px; margin-top: 12px; float:left;}
   .lb .lbrb2 span{color: rgb(77, 180, 224);}
-
   .rc{outline:1px #F00 solid; margin-left: 545px; height: 394px;}
   .rc .rt{outline:1px #F00 solid; height:170px;}
   .rc .rt ul{outline:1px #F00 solid; width:110%}
@@ -61,13 +58,14 @@
     line-height:14px; text-align:center;  font-weight:bold;}
   .rc .rt img{width:100%;}
   .rc .rt span{outline:1px #F00 solid; width: 140px; height: 30px; display: block ; margin-top: 5px; }
-
   .rc .rb{outline:1px #F00 solid; height:auto; margin-top: 18px; }
   .rc .rb li{margin-bottom: 10px; font-size: 12px; }
-  .rc .rb .second_to_last{ height:33px; font-size:12px; line-height:16px; padding-top:5px;  color:rgb(203, 203, 203);}
-  .rc .rb .stli{outline:1px #F00 solid; width: 38px; height: 38px; float:left;}
-  .stli img {width:100%;}
-
+  .rc .rb .second_to_last{ height:33px; width:250px;  font-size:12px;  }
+  .rc .rb .second_to_last span { color:rgb(203, 203, 203); padding-left: 10px; line-height:16px;  padding: 5px 0 0 7px ; display: block;}
+  .rc .rb .stli{outline:1px #F00 solid; width: 38px; height: 38px; float:left; margin-right: 7px; }
+  .rc .rb .stli   img {width:100%; height:100%;}
+  .gobtn{outline:1px #F00 solid; font-size:11px ; clear:right; position: absolute; top:530px; right:350px;}
+  .gobtn strong{ color: rgb(28, 104, 184) ;}
 </style>
 </head>
 
@@ -93,15 +91,16 @@
             <div class="thumb"><img src="http://static.naver.net/newsstand/2017/0125/inews/071955/001.jpg" alt="형광빛파란색 자물쇠 위에 돋보기가 있는 사진"></div>
             </a>
           </li>
-          <li><a href="">파수닷컴, 에스피에이스 보안컨설팅 사업 25억에 인수</a></li>
-          <li><a href="">SK인포섹, 산업제어시스템 보안컨설팅 '출사표'</a></li>
-          <li><a href="">미래부 보안컨설팅 지정제 "실효성 없다"</a></li>
+          <li class="bg"><a href="">파수닷컴, 에스피에이스 보안컨설팅 사업 25억에 인수</a></li>
+          <li class="bg"><a href="">SK인포섹, 산업제어시스템 보안컨설팅 '출사표'</a></li>
+          <li class="bg"><a href="">미래부 보안컨설팅 지정제 "실효성 없다"</a></li>
+          </ul>
           <div class="ltcol">
             <a href="">
               <span>[칼럼]</span>[이영은] 국산차 '한국인CEO' 3인에 거는 기대 크다
             </a>
           </div>
-        </ul>
+
       </div>
       <div class="lb">
         <div class="lbl">
@@ -176,28 +175,28 @@
           </ul>
         </div> <!--rt-->
         <div class="rb">
-
             <ul>
-              <li><a href="">박한철 "朴 대통령 탄핵심판 결론 3월 13일까지</a></li>
+              <li><a href="" style="color:rgb(227, 36, 185)">박한철 "朴 대통령 탄핵심판 결론 3월 13일까지</a></li>
               <li><a href="">반기문, 연일 보수 의원과 회동 "정치교체해야"</a></li>
               <li><a href="">남경필, 대선출마 선언 "대한민국 리빌딩하겠다"</a></li>
-              <li><a href="">4Q 실질GDP 0.4%…6분기 만에 최저(속보)</a></li>
+              <li><a href=""><strong>4Q 실질GDP 0.4%…6분기 만에 최저(속보)</strong></a></li>
               <li><a href="">써티컷, 대체투자전문 P2P금융 '비욘드펀드' 출범</a></li>
               <li><a href="">설연휴 불법대출·투자 피해? 금감원 신고센터 운영</a></li>
             </ul>
-
         <div class="second_to_last">
-          <div class="stli"><img src="http://static.naver.net/newsstand/2017/0125/inews/171953/008.jpg" alt="노란책"></div>
-          <span>[책]4차 산업혁명 대비 '경영을 살리는 IT 2'</span>
+          <a href="http://news.inews24.com/php/news_view.php?g_serial=1002282&g_menu=023120">
+            <div class="stli"><img src="http://static.naver.net/newsstand/2017/0125/inews/171953/008.jpg" alt="노란책"></div>
+            <span>[책]4차 산업혁명 대비 '경영을 살리는 IT 2'</span>
+          </a>
         </div>
-
-
       </div><!--rb-->
+      <a href="http://www.inews24.com/" class="gobtn"><strong>아이뉴스24</strong> 사이트 바로가기</a>
     </div><!--rc-->
 
+</section>
 
 
-  </section>
+
 </div> <!--wrap-->
 </body>
 </html>
