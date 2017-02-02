@@ -11,8 +11,9 @@
   ul,ol{list-style: none;}
   a{text-decoration:none; color:#000;}
   img{vertical-align: top;}
+
   .wrap{outline: 1px #F00 solid; width: 990px; margin: 0 auto; height:100%;}
-  .gnb{border-bottom: 1px #000 solid; height: 30px; line-height:30px; font-size:11px; }
+  .gnb{border-bottom: 1px #000 solid; height: 30px; line-height:30px; font-size:11px; background-color: rgb(245, 245, 245) ;}
   .gnb img{vertical-align:middle}
   .gnb ul li{float:left;}
   .gnb ul + ul{float:right;}
@@ -20,7 +21,7 @@
   header{ height: auto;}
   h1{margin-top: 31px; display:block; float:left;}
   .sad{width: 285px; height:auto; margin: 0 auto; float:left; margin-left: 287px; }
-  .sad article{ width: 280px; height: 55px; float:left;}
+  .sad article{ width: 280px; height: 55px;}
   .sad article img{width: 100%;}
   .sad input{ outline: 2px rgba(20, 49, 121, 0.82) solid; width: 242px; height: 20px; float:left; }
   .searchm {outline: 2px rgba(20, 49, 121, 0.82) solid; width: 38px; height: 24px; float:left; overflow: hidden;}
@@ -30,6 +31,7 @@
   header ul { clear:left; }
   header ul li{  float:left;  margin-bottom: 15px; }
   header ul li a{ font-size: 13px; color:rgb(125, 125, 125); font-weight: bold;}
+
   .top_blue{ background-color: rgba(20, 49, 121, 0.82); clear:left; position:relative; }
   .top_ul{ height: 49px; line-height:49px;}
   .top_ul li{ height: auto; text-align: center; margin:0 5px; }
@@ -63,6 +65,16 @@
   section .main_contents_four .main_cover span + span bold{font-weight: bold;}
   section .main_contents_four .main_cover img{position:absolute; right:12px; bottom:8px;}
 
+  .cyb{ border-top: 1px rgb(125, 125, 125) solid; height: auto; padding: 10px 0;  }
+  .cyb span{ font-weight:bold; font-size: 9px; color:rgb(125, 125, 125); }
+  .more{float:right;}
+  .more img{vertical-align:middle}
+  .cyb li{ float:left;  text-align: center; margin: 12px 11px 11px 0;}
+  .cyb li:first-child{ float:left; margin-left:0 ;}
+
+
+
+
   aside{ outline: 1px #F00 solid; margin-left: 751px; }
   aside .log_in{outline: 1px #F00 solid; width: 235px; height: 100px;}
 
@@ -75,9 +87,10 @@
   input[type="text"]{width: 149px; height: 24px; float:left; }
   input[value="로그인"]{width: 56px; height: 55px; margin-left: 4px;}
 
-  .hot_issue{padding: 10px 10px 10px 10px; font-size: 12px; font-weight: bolder;}
+  .hot_issue{padding: 10px 10px 0 10px; font-size: 12px; font-weight: bolder; border-bottom: 1px rgb(170, 170, 170) solid ;}
   .hot_issue .hot_it{ float:right;}
   .hot_issue div:first-child span{font-weight: normal; }
+
 
   .aside_li_1{  margin-top: 10px; height:53px; position:relative; }
   .aside_li_1 div {  width: 78px; height: 53px; float:right;}
@@ -88,12 +101,38 @@
 
 
 
+  .dot{ width: 2px; height: 2px; background-image: url(../image/bbd/icon_news_dot.png); background-repeat: no-repeat; display:inline-block; vertical-align: middle; margin-right: 8px; }
+
+  .aside_news{border-bottom: 1px rgb(170, 170, 170) solid ; height: 197px; padding: 10px 10px 0 10px; font-size: 12px; font-weight: bolder; }
+  .aside_news .aside_news_top{float: right;}
+  .aside_news div + span{  width:125px; height: 28px; font-size: 11px;  display: block; font-weight: normal; display: block; margin-left: 90px; padding-top: 11px;}
+  .aside_news_main{ height:56px; margin: 13px 0; }
+  .aside_news_main div{outline: 1px rgb(170, 170, 170) solid ; width: 77px; height: 54px; float:left;}
+  .aside_news_ul{font-weight: normal;}
+  .aside_news_ul li{margin-bottom: 8px;}
+
+  .aside_pop_con{ height: 42px; margin: 13px 0; }
+  .aside_pop_con span{margin-left: 90px; display: block;}
+  .aside_pop_con div{outline: 1px rgb(170, 170, 170) solid ; width: 78px; height: 40px; float:left; overflow: hidden;}
+  .aside_pop_con div img{width: 100%;}
+
+  .aside_my_pop{ margin-bottom: 14px;}
+  .aside_li_my{  margin-top: 10px; height:41px; position:relative; }
+  .aside_li_my div { outline: 1px rgb(170, 170, 170) solid;  width: 78px; height: 41px; float:right;}
+  .aside_li_my div img{ width: 100%;}
+  .aside_li_my span{ width:107px; text-align: left; display: block; margin-left:17px; position:relative; top:4px; }
+  .aside_li_my div + img{ float:left; position:relative; top:7px; }
+
+  .bb_story{outline: 1px rgb(170, 170, 170) solid; margin: 9px 0; }
+
+
+
 
   </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="gnb">
+  <div class="gnb">
       <ul>
         <li><a href=""><img src="../image/bbd/icon_star.png" alt=""> 즐겨찾기&nbsp;&nbsp; </a></li>
         <li><a href=""><img src="../image/bbd/icon_num10.png" alt=""> 기아&nbsp;K5&nbsp;하이브리드&nbsp;(12년식)&nbsp;</a></li>
@@ -111,13 +150,13 @@
       </ul>
     </div>
 
-  <header>
+<header>
      <h1><img src="../image/bbd/logo.png" alt=""></h1>
 
      <div class="sad">
-      <article><img src="../image/bbd/banner_top.png" alt=""></article>
-      <input type="text"/>
-      <div class="searchm"><img src="../image/bbd/searchm.png" alt=""></div>
+        <article><img src="../image/bbd/banner_top.png" alt=""></article>
+        <input type="text"/>
+        <div class="searchm"><img src="../image/bbd/searchm.png" alt=""></div>
      </div>
 
      <div class="musical"><img src="../image/bbd/musical.png" alt=""></div>
@@ -154,7 +193,7 @@
         <span><a href="">오늘방문&nbsp;<bold>981,478</bold>&nbsp;&nbsp;어제방문&nbsp;<bold>981,478</bold></a></span>
      </div>
   </header>
-  <section>
+<section>
     <div class="main_contents">
       <div class="main_ad">
         <img src="../image/bbd/main_ad.png" alt="">
@@ -215,17 +254,6 @@
     </ul>
   </div> <!--main_contents-->
 
-
-<style>
-
-.cyb{ border-top: 1px rgb(125, 125, 125) solid; height: auto; padding: 10px 0;  }
-.cyb span{ font-weight:bold; font-size: 9px; color:rgb(125, 125, 125); }
-.more{float:right;}
-.more img{vertical-align:middle}
-.cyb li{ float:left;  text-align: center; margin: 12px 11px 11px 0;}
-.cyb li:first-child{ float:left; margin-left:0 ;}
-
-</style>
 
   <div class="cyb">
      <strong style="font-size:12px;">사이버매장 신규매몰</strong>
@@ -289,6 +317,7 @@
       <span><bold>회원가입</bold>&nbsp;&#124;&nbsp;ID/비밀번호 찾기</span>
     </div>
   </div>
+
   <div class="hot_issue">
     커뮤니티 핫이슈
     <div class="hot_it">
@@ -296,7 +325,6 @@
       1<span>/20</span>
       <img src="../image/bbd/icon_issue_arrow2.png" alt="">
     </div>
-
     <ul>
       <li>
         <a href="">
@@ -322,14 +350,148 @@
           </div>
         </a>
       </li>
-
-
-
     </ul>
-
-
-
   </div>
+
+  <div class="aside_news">
+      자동차 뉴스
+      <div class="more">
+       <span>더보기</span>
+       <img src="../image/bbd/icon_right_arrow.png" alt="">
+      </div>
+    <div class="aside_news_ul">
+      <ul>
+        <li>
+          <a href="">
+            <div class="aside_news_main">
+               <div><img src="../image/bbd/aside_news.png" alt=""></div>
+               <span> 르노삼성 부산공장 중대형 핵심기지 될 것</span>
+            </div>
+          </a>
+        </li>
+        <li><i class="dot"></i>쌍용 EREV, 전기자동차 2015년 양상</li>
+        <li><i class="dot"></i>[2012 결산] 전자.자동차.철강 등</li>
+        <li><i class="dot"></i>남양연구소 'T-LPDi' 사용화 박차</li>
+        <li><i class="dot"></i>올해들어 수입차 CEO 대거 교체</li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+<div class="hot_issue">
+    커뮤니티 인기글
+    <div class="more">
+       <span><b>더보기</b></span>
+       <img src="../image/bbd/icon_right_arrow.png" alt="">
+    </div>
+    <ul>
+        <li>
+          <a href="">
+            <div class="aside_pop_con">
+               <div><img src="../image/bbd/cmnt_hot1.png" alt=""></div>
+               <span> 신호위반 접촉사고 <br/> 망설임없이 바로 도주</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="aside_pop_con">
+               <div><img src="../image/bbd/cmnt_hot2.png" alt=""></div>
+               <span> 중앙선을 넘어선 순간 <br/> 대형사고 간신히 모면</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="aside_pop_con">
+               <div><img src="../image/bbd/cmnt_hot3.png" alt=""></div>
+               <span> 짙은안개 고속도로 <br/> 살벌한 추돌사고</span>
+            </div>
+          </a>
+        </li>
+    </ul> <!-- 커뮤니티 인기글 -->
+  </div>
+
+  <div class="hot_issue">
+    내차소 인기순위
+    <div class="more">
+       <span><b>더보기</b></span>
+       <img src="../image/bbd/icon_right_arrow.png" alt="">
+    </div>
+    <ul class="aside_my_pop">
+      <li>
+        <a href="">
+          <div class="aside_li_my">
+             <div><img src="../image/bbd/aside_pop1.png" alt=""></div>
+             <img src="../image/bbd/icon_blue1.png" alt="" ><span> 270ELISA 님의 <br/>현대 투스카니</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <div class="aside_li_my">
+             <div><img src="../image/bbd/aside_pop2.png" alt=""></div>
+             <img src="../image/bbd/icon_2.png" alt="" ><span> 대금이 님의 <br/>현대 뉴 제네시스</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <div class="aside_li_my">
+             <div><img src="../image/bbd/aside_pop3.png" alt=""></div>
+             <img src="../image/bbd/icon_3.png" alt="" ><span> 날아라콩떡 님의 <br/>아우디 뉴 A6</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="hot_issue">
+    보배드림 이야기
+    <div class="more">
+       <span><b>더보기</b></span>
+       <img src="../image/bbd/icon_right_arrow.png" alt="">
+    </div>
+    <div class="bb_story">
+      <a href="">
+        <img src="../image/bbd/aside_bobae_story.png" alt="">
+      </a>
+    </div>
+  </div>
+
+
+<style>
+
+.aside_bb_event{ outline: 1px rgb(170, 170, 170) solid; height:54px; margin: 10px 0 14px;}
+.aside_bb_event div{outline: 1px rgb(170, 170, 170) solid; width: 78px; height: 54px; float: left;}
+.aside_bb_event div img{width: 100%; }
+.aside_bb_event div + span{outline: 1px rgb(170, 170, 170) solid; height: 54px;  margin-left: 90px ; font-weight: normal; font-size: 11px; display:block;}
+
+</style>
+  <div class="hot_issue">
+    이벤트 소식
+    <div class="more">
+       <span><b>더보기</b></span>
+       <img src="../image/bbd/icon_right_arrow.png" alt="">
+    </div>
+
+    <div class="aside_bb_event">
+      <a href="">
+        <div><img src="../image/bbd/aside_bobae_event.png" alt=""></div>
+        <span>맨즈박스에 참여한 브랜드 중 마음에 드는 상품을 골라주세요!</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="hot_issue">
+    보배드림과 SNS 친구구구
+    <div class="more">
+       <span><b>더보기</b></span>
+       <img src="../image/bbd/icon_right_arrow.png" alt="">
+    </div>
+ </div>
 
 
   </aside>
