@@ -12,9 +12,11 @@
   a{text-decoration:none; color:#000;}
   img{vertical-align: top;}
 
-  .wrap{outline: 1px #F00 solid; width: 990px; margin: 0 auto; height:100%;}
+  .ir{text-indent: -9999px; font-size: 0; position:absolute; top:-9999px left:-9999px; }
+
+  .wrap{ width: 990px; margin: 0 auto; height:100%;}
   .gnb{border-bottom: 1px #000 solid; height: 30px; line-height:30px; font-size:11px; background-color: rgb(245, 245, 245) ;}
-  .gnb img{vertical-align:middle}
+  .gnb img{vertical-align:middle;}
   .gnb ul li{float:left;}
   .gnb ul + ul{float:right;}
 
@@ -51,7 +53,7 @@
   section .main_ad img{width: 100%;}
   section .go_party{border: 1px rgb(170, 170, 170) solid; width: 220px; height: 100px; float:right; margin-bottom:11px;}
   section .go_party img{width: 100%;}
-  section .main_contents_four{outline: 1px #F00 solid;}
+  /*section .main_contents_four{outline: 1px #F00 solid;}*/
   section .main_contents_four li{ float:left;}
   section .main_contents_four li + li img{outline: 1px rgb(170, 170, 170) solid; float:left; margin: 0 0 4px ;}
   section .main_contents_four li:first-child{ position:relative; height:232px; margin: 0 8px 10px 0;}
@@ -75,8 +77,8 @@
 
   /*aside*/
 
-  aside{ outline: 1px #F00 solid; margin-left: 751px; }
-  aside .log_in{outline: 1px #F00 solid; width: 235px; height: 100px;}
+  aside{ margin-left: 751px; }
+  aside .log_in{width: 235px; height: 100px;}
 
   .log_in{width: 100%;}
   .log_in .bipl{font-size: 10px; text-indent: 14px}
@@ -137,6 +139,76 @@
   aside .b_sns{ height:90px; padding: 10px 10px 0; font-size: 12px; font-weight: bolder; border-bottom: 1px rgb(170, 170, 170) solid ;}
   aside .bb_sns{ padding-top: 10px;}
   aside .bb_sns ul li{margin: 0 3px 5px 0 ; float:left;}
+  footer{width: 990px; height: 450px; border-top: 2px rgb(170, 170, 170) solid ; }
+  .notice{width: 990px;  height:30px; border-bottom: 1px rgb(170, 170, 170) solid ;  text-indent: 13px; display:inline-block; vertical-align: middle;}
+  .noticep{ width: 41px; height: 30px; margin-left:16px ; background-position: 5px 0  ; font-size:11px; background-image: url(../image/bbd/fnotice.png);   background-repeat: no-repeat;   background-position: 0 10px; line-height: 30.8px;}
+  .noticesvc{ width: 70px; height: 30px; margin-right: 4px; font-size:11px; background-image: url(../image/bbd/ftotal_service.png);   background-repeat: no-repeat;   background-position: 0 10px;}
+  .noticearrw{width: 3px; height: 30px; margin-right: 16px; font-size:11px; background-image: url(../image/bbd/footer_arrow-_right_blue.png);   background-repeat: no-repeat;   background-position: 0 13px; }
+
+  .fl{float:left;}
+  .fr{float:right;}
+
+  .foot_lists{border: 1px rgb(170, 170, 170) solid; background-color: rgb(250, 250, 250) ;width: 990px; height: 214px; font-size: 10px; }
+  .foot_lists ul{margin-top: 23px; float:left; width: 122px; height: 191px;}
+  .foot_lists ul{padding-left: 15px;}
+  .foot_lists ul li{margin-bottom: 5px;}
+  .foot_lists ul li:first-child{margin-bottom: 15px;}
+  .foot_lists ul li a{font-weight: lighter;}
+  ul.vertical{
+    background-image: url(../image/bbd/vertical.png);
+    background-repeat: no-repeat;
+    background-position: 0 -3px;
+    }
+.last_footer{ border-bottom: 1px rgb(170, 170, 170) solid ; width: 990px; height: 30px; line-height: 30px;}
+.last_footer ul{ width: 990px; height: 30px; }
+.last_footer ul li{ float:left;  padding: 0 10px 0 8px; height:30px; font-size: 9px; font-weight: lighter;}
+.last_footer ul li a{height: 30px; }
+.list_dot{
+  background-image: url(../image/bbd/list_style_dot.png);
+  background-repeat: no-repeat;
+  background-position: 0 13px;
+  }
+.fqna{
+  background-image: url(../image/bbd/fqna.png); background-repeat: no-repeat; background-position: 0 0;
+  display: inline-block; vertical-align: -2px; padding: 0 4px 0 0 ; width: 40px;  height: 12px;
+  }
+.fqnb{
+  background-image: url(../image/bbd/fcad.png); background-repeat: no-repeat; background-position: 0 0;
+  display: inline-block; vertical-align: -2px; padding: 0 4px 0 0 ; width: 40px;  height: 12px;
+  }
+.fqnc{
+  background-image: url(../image/bbd/fcol.png); background-repeat: no-repeat; background-position: 0 0;
+  display: inline-block; vertical-align: -2px; padding: 0 4px 0 0 ; width: 40px;  height: 12px;
+  }
+.fqnd{
+  background-image: url(../image/bbd/finq.png); background-repeat: no-repeat; background-position: 0 0;
+  display: inline-block; vertical-align: -2px; padding: 0 4px 0 0 ; width: 40px;  height: 12px;
+  }
+.fqne{
+  background-image: url(../image/bbd/fcolc.png); background-repeat: no-repeat; background-position: 0 0;
+  display: inline-block; vertical-align: -2px; padding: 0 4px 0 0 ; width: 40px;  height: 12px;
+  }
+.fqnf{
+  background-image: url(../image/bbd/fcom.png); background-repeat: no-repeat; background-position: 0 0;
+  display: inline-block; vertical-align: -2px; padding: 0 4px 0 0 ; width: 40px;  height: 12px;
+  }
+.fqng{
+  background-image: url(../image/bbd/frep.png); background-repeat: no-repeat; background-position: 0 0;
+  display: inline-block; vertical-align: -2px; padding: 0 4px 0 0 ; width: 40px;  height: 12px;
+  }
+  /*.last_footer ul li:nth-child(2){outline:11px #F00 solid; background-image: url(../image/bbd/fdo.png); }*/
+  .list_dot:last-child img{ vertical-align: -2px; }
+
+  .final-final{width: 990px; height: 173px; }
+  .final-final ul{ width: 990px;  height: 51px; line-height: 51px; position:relative; }
+  .final-final ul li{ float:left;  padding: 0 13px 0 0; height:51px; font-size: 11px; position:relative; left:20%;}
+  .final-final ul li a{height: 51px; font-weight: bolder; color: rgb(54, 54, 54); }
+  .final-final ul li img{ vertical-align: -1px; margin-left: 11px;}
+
+  .final-final p{text-align: center; font-size: 10px; color:rgb(186, 186, 186) ;}
+  .final-final span{display:inline-block; padding: 1.5px 0;}
+  .final-final p span + img{vertical-align: -2px; margin-left: 5px;}
+  .final-final p span img{ margin: 0 6px;   vertical-align: -2px;}
 
 
 
@@ -218,7 +290,7 @@
       <ul class="main_contents_four">
         <li>
           <a href="">
-            <img class="audi"src="../image/bbd/main_list_audi.png" alt="">
+            <img class="audi"src="../image/bbd/main_audi.png" alt="">
             <div class="main_cover">
               <cite>사이버매장 특종매물</cite><br/>
               <span>2013 아우디 R8 5.2 V10 스파이더</span>
@@ -495,15 +567,20 @@
   </section>
   <aside>
     <div class="log_in">
-      <div class="ipl">
-        <input type="text" placeholder="아이디">
-        <input type="text" placeholder="비밀번호">
-        <input type="submit" value="로그인"/>
-      </div>
-      <div class="bipl">
-        <input type="checkbox"> ID저장
-        <span><bold>회원가입</bold>&nbsp;&#124;&nbsp;ID/비밀번호 찾기</span>
-      </div>
+        <form action="https://nid.naver.com/nidlogin.login" method="post">
+        <fieldset>
+            <legend class="ir">로그인</legend>
+          <div class="ipl">
+            <input type="text" placeholder="아이디">
+            <input type="text" placeholder="비밀번호">
+            <input type="submit" value="로그인"/>
+          </div>
+          <div class="bipl">
+            <input type="checkbox"> ID저장
+            <span><bold>회원가입</bold>&nbsp;&#124;&nbsp;ID/비밀번호 찾기</span>
+          </div>
+      </fieldset>
+      </form>
     </div>
 
     <div class="hot_issue">
@@ -680,31 +757,112 @@
           </div>
        </div>
     </aside>
-
-
-<style>
-    footer{width: 990px; height: 450px; border-top: 2px rgb(170, 170, 170) solid ; }
-    .notice{width: 990px;  height:30px; border-bottom: 1px rgb(170, 170, 170) solid ;  text-indent: 13px; display:inline-block; vertical-align: middle;}
-    .noticep{ width: 41px; height: 30px; margin-left:16px ; background-position: 5px 0  ; font-size:11px; background-image: url(../image/bbd/fnotice.png);   background-repeat: no-repeat;   background-position: 0 10px; line-height: 30.8px;}
-    .noticesvc{ width: 70px; height: 30px; margin-right: 4px; font-size:11px; background-image: url(../image/bbd/ftotal_service.png);   background-repeat: no-repeat;   background-position: 0 10px; line-height: 30.8px;}
-    .noticearrw{width: 3px; height: 30px; margin-right: 16px; font-size:11px; background-image: url(../image/bbd/footer_arrow-_right_blue.png);   background-repeat: no-repeat;   background-position: 0 10px; line-height: 30.8px;}
-
-    .fl{float:left;}
-    .fr{float:right;}
-
-    .flists{  border: 1px rgb(170, 170, 170) solid; width: 990px; height: 214px;}
-
-</style>
     <footer>
         <div class="notice">
             <i class="noticep fl"></i>
             <i class="noticearrw fr"></i>
             <i class="noticesvc fr"></i>
         </div>
-        <div class="flists">
-            ul>li
+        <div class="foot_lists">
+            <ul>
+              <li><a href=""><img src="../image/bbd/fcy.png" alt=""></a></li>
+              <li><a href="">국산차매장</a></li>
+              <li><a href="">수입차매장</a></li>
+              <li><a href="">튜닝카매장</a></li>
+              <li><a href="">승용차매장</a></li>
+              <li><a href="">스포츠카매장</a></li>
+              <li><a href="">4륜/SUV매장</a></li>
+              <li><a href="">벤/승합차차매장</a></li>
+              <li><a href="">오토갤러리매장</a></li>
+            </ul>
+            <ul class="vertical">
+              <li><a href=""><img src="../image/bbd/fdo.png" alt=""></a></li>
+              <li><a href="">전체차량</a></li>
+              <li><a href="">인기차량</a></li>
+              <li><a href="">확인차량</a></li>
+              <li><a href="">경매차량</a></li>
+              <li><a href="">특수/특장차</a></li>
+              <li><a href="">국산차매장</a></li>
+              <li><a href="">중고차시세</a></li>
+              <li><a href="">차종별검색</a></li>
+            </ul>
+            <ul class="vertical">
+              <li><a href=""><img src="../image/bbd/ffo.png" alt=""></a></li>
+              <li><a href="">전체차량</a></li>
+              <li><a href="">인기차량</a></li>
+              <li><a href="">확인차량</a></li>
+              <li><a href="">경매차량</a></li>
+              <li><a href="">특수/특장차</a></li>
+              <li><a href="">국산차매장</a></li>
+              <li><a href="">중고차시세</a></li>
+              <li><a href="">차종별검색</a></li>
+            </ul>
+            <ul class="vertical">
+              <li><a href=""><img src="../image/bbd/fsel.png" alt=""></a></li>
+              <li><a href="">사이버매물등록</a></li>
+              <li><a href="">국산차등록</a></li>
+              <li><a href="">수입차등록</a></li>
+              <li><a href="">매물등록권 구입</a></li>
+            </ul>
+            <ul class="vertical">
+              <li><a href=""><img src="../image/bbd/fbb.png" alt=""></a></li>
+              <li><a href="">베스트글</a></li>
+              <li><a href="">자유게시판</a></li>
+              <li><a href="">질문과 답변</a></li>
+              <li><a href="">시승기</a></li>
+              <li><a href="">내차소개</a></li>
+              <li><a href="">자동차동영상</a></li>
+              <li><a href="">특종사진</a></li>
+              <li><a href="">레이싱모델</a></li>
+            </ul>
+            <ul class="vertical">
+              <li><a href=""><img src="../image/bbd/fco.png" alt=""></a></li>
+              <li><a href="">내차소개</a></li>
+              <li><a href="">자동차동영상</a></li>
+              <li><a href="">특종사진</a></li>
+              <li><a href="">레이싱모델</a></li>
+            </ul>
+            <ul class="vertical">
+              <li><a href=""><img src="../image/bbd/fma.png" alt=""></a></li>
+              <li><a href="">오토바이</a></li>
+              <li><a href="">용품장터</a></li>
+              <li><a href="">부배모델</a></li>
+              <li><a href="">경매차량</a></li>
+              <li><a href="">공매차량</a></li>
+              <li><a href="">이벤트</a></li>
+            </ul>
+        </div> <!--foot_lists-->
 
+        <div class="last_footer">
+          <ul>
+            <li class="list_dot"><a href=""><i class="fqna"></i></a>02-784-2329</li>
+            <li class="list_dot"><a href=""><i class="fqnb"></i></a>02-784-2329</li>
+            <li class="list_dot"><a href=""><i class="fqnc"></i></a>02-784-2329</li>
+            <li class="list_dot"><a href=""><i class="fqnd"></i></a>02-784-2329</li>
+            <li class="list_dot"><a href=""><i class="fqne"></i></a>02-784-2329</li>
+            <li class="list_dot"><a href=""><i class="fqnf"></i></a>02-784-2329</li>
+            <li class="list_dot"><a href=""><i class="fqng"></i></a>장애/오류신고 <img src="../image/bbd/short_vert.png" alt=""> 권리침해신고</li>
+          </ul>
+        </div>
+        <div class="final-final">
 
+        <ul>
+          <li><a href="">회사소개</a><img src="../image/bbd/short_vert.png" alt=""></li>
+          <li><a href="">제휴광고</a><img src="../image/bbd/short_vert.png" alt=""></li>
+          <li><a href="">협력업체신청</a><img src="../image/bbd/short_vert.png" alt=""></li>
+          <li><a href="">인재채용</a><img src="../image/bbd/short_vert.png" alt=""></li>
+          <li><a href="">이용약관</a><img src="../image/bbd/short_vert.png" alt=""></li>
+          <li><a href="">개인정보취급방침</a><img src="../image/bbd/short_vert.png" alt=""></li>
+          <li><a href="">고객센터</a><img src="../image/bbd/short_vert.png" alt=""></li>
+          <li><a href="">사이트맵</a></li>
+        </ul>
+        <p>
+          <span>사업자등록번호 : 117-81-64543 통신판매업신고번호 : 제 2012-서울영등포-0697호</span><img src="../image/bbd/business_information.png" alt=""><br/>
+          <span>주식회사 보배 네트워크<img src="../image/bbd/short_vert.png" alt="">주소 : 서울 영등포구 양평동3가 16 우림E비즈센터 11,12층<img src="../image/bbd/short_vert.png" alt="">대표이사 : 김보배<img src="../image/bbd/short_vert.png" alt="">개인벙보관리책임자:김태형</span><br/>
+          <span>대표전화 : 02-734-2329<img src="../image/bbd/short_vert.png" alt="">대표팩스 : 02-64*9-2329<img src="../image/bbd/short_vert.png" alt="">이메일: bobaedream@bobaeream.co.kr</span><br/>
+          <span>Copyright (c) BOBAENETWORK All rights reserved</span><br/><br/>
+          <span>보배드림은 통신판매중개자이며 차량판매의 당사자가 아닙니다. 따라서 보배드림은 차량 거래검토 및 거래에 대하여 어떤 책임을 지지 않습니다.</span><br/>
+        </p>
 
         </div>
 

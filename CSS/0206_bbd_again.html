@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Bobae_dream</title>
+	</head>
+	  <style>
+		/*reset*/
+		*{margin: 0; padding:0;}
+		ol,ul{list-style:none;}
+		a{text-decoration:none; color:#000;}
+		img{vertical-align: top;}
+		fieldset{border:0;}
+		input{vertical-align: middle;}
+
+		/*option*/
+		.fr{float:right;}
+		.fl{float:left;}
+		.gnb .rank i[class^="up_"]{color:red;}
+		.gnb .rank i[class^="down_"]{color:blue;}
+		.ir{font-size: 0; text-indent: -9999px; position:absolute; top:-9999px; left:-9999px;}
+
+		/*lay out*/
+		.wrap{width:990px; height:800px; margin: 0 auto; }
+		.gnb{width: 990px; height: 30px;  margin: 0 auto; line-height: 30px; background-color: rgb(240, 240, 240);}
+		.header{width: 990px; height: 138px; }
+		.book_mark{
+			font-size: 11px; background-image: url(../image/bbd/icon_star.png); background-repeat:no-repeat;
+			background-position: 0 10px; padding-left: 13px;
+		}
+		.gnb .rank{margin-left:13px;}
+		.gnb .rank li{
+			display:none; font-size:11px; padding-left:20px; background-image: url(../image/bbd/icon_num10.png);
+			background-repeat: no-repeat; background-position: 0 10px;
+		}
+		.gnb .rank .on{display:block;}
+		.gnb .rank li .up_icon{
+			background-image: url(../image/bbd/icon_up.png);
+			background-repeat: no-repeat; background-position: 0 4px;
+			color: #F00; padding-left:8px;
+		}
+		.gnb_my_option{}
+		.gnb_my_option li{
+			float:left; margin-left: 8px; background-image: url(../image/bbd/short_vert.png);
+			background-repeat: no-repeat; background-position: 0 13px;
+			padding-left: 7px; height: 30px;
+		}
+		.gnb_my_option li:first-child{background-image: none;}
+		.gnb_my_option li a{font-size: 11px;}
+		.gnb_my_option{}
+		.icon_select{ width: 12px; height: 12px; margin-left: 5px; display:inline-block; background-image: url(../image/bbd/icon_menu_down.png);
+			background-repeat: no-repeat; vertical-align: middle;
+		}
+		.icon_mobile{ width: 8px; height: 12px; margin-right: 5px; display:inline-block; background-image: url(../image/bbd/icon_phone.png);
+			background-repeat: no-repeat; vertical-align: middle;
+		}
+		.gnb_my_option strong{color:blue;}
+
+		.lnb{width:990px; height: 107px; margin: 0 auto; }
+
+		.logo h1{width: 105px; height: 27px; position:relative; top:34px; }
+		.promotion{width: 233px; height: 77px; position:relative; top:15px; }
+		.search{ width: 280px; height: 79px; margin: 0 auto; position:relative; top:17px;}
+		.search input[type="text"]{border:2px #3b5999 solid; width: 218px; height: 21px; padding:0 10px;}
+		.search input[type="submit"]{
+			width: 38px; height: 25px; border:none;
+			background:#3b5999 url(../image/bbd/icon_search.png) no-repeat center center;
+			text-indent:-9999px; font-size:0;
+		}
+		.sub_menu{}
+		.sub_menu li{float:left; }
+		.sub_menu li img{ background: url(../image/bbd/short_vert.png) no-repeat; padding: 0 7px 0 8px; }
+		.sub_menu li:first-child img{ padding-left: 0px; background-image: none;}
+
+		.nav{width: 990px; height: 76px; margin: 0 auto; border-bottom:1px rgb(226, 226, 226) solid; position:relative;}
+		.nav>ul{height: 38px; background-color:#3b5999;}
+		.nav>ul>li{
+			float:left; line-height: 38px; font-size: 14px; font-weight: bold;
+			background-image: url(../image/bbd/short_vert.png);
+			background-repeat: no-repeat;
+			background-position: 0 15px ;
+		}
+		.nav>ul>li>a{color:#FFF;}
+		.nav>ul>li:hover{background: rgb(93, 148, 255);}
+		.nav>ul>li>a{display:block; padding:0 10px; }
+		.nav ul li:first-child{background-image: none;}
+		.nav ul ul{position:absolute; display:none;}
+		.nav li.on ul{display:block;}
+		.nav ul ul li{
+			float:left; line-height: 38px; font-size: 14px; font-weight: bold;
+			background-image: url(../image/bbd/short_vert.png);
+			background-repeat: no-repeat;
+			background-position: 0 15px ;
+		}
+		.nav ul ul li a{display:block; padding:0 5px; font-size: 12px;}
+		.nav_more{
+			width: 7px; height: 4px; background-image: url(../image/bbd/icon_down_arrow.png);
+			background-repeat: no-repeat; background-position: 0 0;
+			padding-left:7px; display: inline-block; vertical-align: middle;
+		}
+		.nav>ul>li:nth-child(7){ padding-left: 10px; height:37px;}
+		.nav>ul>li:last-child{}
+		.information{position: absolute; top: 0; right:0; font-size:11px; color:#FFF; height: 76px;}
+		.information h2{font-size: 11px; display:inline-block; }
+		.information .nav_notice{height:38px; line-height: 38px;}
+		.information .intoday div{margin-right: 5px; display:inline-block; line-height: 38px;}
+		.information .intoday div span{ margin-right: 5px; color:#373737;}
+		.information .intoday div strong{color:#005dde;}
+
+
+
+		.nav_arrow{
+			width: 3px; height: 5px; background-image: url(../image/bbd/right_blue_arrow.png);
+			background-repeat: no-repeat; background-position: 6px 0;
+			padding-left:7px; display: inline-block; vertical-align: middle;
+		}
+		.body{width: 990px; border: 1px #F00 solid; margin-top: 84px; }
+		.section{width: 748px; height: 355px; float:left; border: 1px #CCC solid;}
+
+
+		.aside{width: 237px; height: 355px; margin-left: 753px; border: 1px #CCC solid;}
+		.top_two{width: 746px; height: 112px;}
+		.t_ad{outline: 1px #CCC solid; width: 520px; height: 100px; float: left;}
+		.go_party{outline: 1px #CCC solid; width: 220px; height: 100px; float: right; }
+		.main_article{outline: 1px #CCC solid; width: 746px; height: 232px;}
+		.main_article li{float:left;}
+		.main_article .audi{outline: 1px #CCC solid; width: 400px; height: 233px;}
+		.main_li{width: 337px; height: 72px;}
+	  </style>
+	<body>
+		<div class="wrap">
+			<div class="header">
+				<div class="gnb">
+					<a href="" class="fl book_mark">즐겨찾기</a>
+					<ol class="fl rank">
+						<li><a href="">기아 K5하이브리드 (12년식)</a></li>
+						<li><a href="">기아 K5하이브리드 (12년식)</a></li>
+						<li><a href="">기아 K5하이브리드 (12년식)</a></li>
+						<li><a href="">기아 K5하이브리드 (12년식)</a></li>
+						<li><a href="">기아 K5하이브리드 (12년식)</a></li>
+						<li><a href="">기아 K5하이브리드 (12년식)</a></li>
+						<li><a href="">기아 K5하이브리드 (12년식)</a></li>
+						<li><a href="">기아 K5하이브리드 (12년식)</a></li>
+						<li><a href="">기아 K5하이브리드 (12년식)</a></li>
+						<li class="on"><a href="">기아 K5하이브리드 (12년식)10번째 <i class="up_icon">45</i></a></li>
+					</ol>
+					<div class="gnb_my_option fr">
+						<ul>
+							<li><a href="">로그인</a></li>
+							<li><a href="">회원가입</a></li>
+							<li><a href="">마이페이지</a><i class="icon_select"></i></li>
+							<li><a href="">쪽지<strong>1</strong></a></li>
+							<li><a href="">찜한차량<strong>1</strong></a></li>
+							<li><a href="">고객센터</a></li>
+							<li><a href="">전체메뉴</a><i class="icon_select"></i></li>
+							<li><a href=""><i class="icon_mobile"></i>모바일</a></li>
+						</ul>
+					</div>
+				</div><!--gnb-->
+				<div class="lnb">
+					<div class="logo fl"><h1><img src="../image/bbd/logo.png" alt=""></h1></div>
+					<div class="promotion fr"><img src="../image/bbd/musical.png" alt=""></div>
+					<div class="search">
+						<div><img src="../image/bbd/banner_top.png" alt=""></div>
+						<fieldset>
+							<legend class="ir">검색</legend>
+							<input type="text"><input type="submit" value="검색">
+						</fieldset>
+					</div>
+					<div class="sub_menu">
+						<ul>
+							<li><a href=""><img src="../image/bbd/pop_used.png" alt=""></a></li>
+							<li><a href=""><img src="../image/bbd/motorcycle.png" alt=""></a></li>
+							<li><a href=""><img src="../image/bbd/market.png" alt=""></a></li>
+							<li><a href=""><img src="../image/bbd/companies.png" alt=""></a></li>
+							<li><a href=""><img src="../image/bbd/event.png" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="nav">
+					<ul>
+						<li class="on"><a href="">사이버매장</a>
+							<ul>
+								<li><a href="">국산차매장</a></li>
+								<li><a href="">수입차매장</a></li>
+								<li><a href="">승용차매장</a></li>
+								<li><a href="">스포츠카매장</a></li>
+								<li><a href="">4륜/suv매장</a></li>
+								<li><a href="">밴/승합차매장</a></li>
+								<li><a href="">튜닝카매장</a></li>
+								<li><a href="">올드카매장</a></li>
+								<li><a href="">오토갤러리매장</a></li>
+							</ul>
+						</li>
+						<li><a href="">국산중고차</a>
+							<ul>
+								<li><a href="">국산차매장</a></li>
+								<li><a href="">수입차매장</a></li>
+								<li><a href="">승용차매장</a></li>
+								<li><a href="">스포츠카매장</a></li>
+								<li><a href="">4륜/suv매장</a></li>
+								<li><a href="">밴/승합차매장</a></li>
+								<li><a href="">튜닝카매장</a></li>
+								<li><a href="">올드카매장</a></li>
+								<li><a href="">오토갤러리매장</a></li>
+							</ul>
+						</li>
+						<li><a href="">수입중고차</a>
+							<ul>
+								<li><a href="">국산차매장</a></li>
+								<li><a href="">수입차매장</a></li>
+								<li><a href="">승용차매장</a></li>
+								<li><a href="">스포츠카매장</a></li>
+								<li><a href="">4륜/suv매장</a></li>
+								<li><a href="">밴/승합차매장</a></li>
+								<li><a href="">튜닝카매장</a></li>
+								<li><a href="">올드카매장</a></li>
+								<li><a href="">오토갤러리매장</a></li>
+							</ul>
+						</li>
+						<li><a href="">내차팔기</a>
+							<ul>
+								<li><a href="">국산차매장</a></li>
+								<li><a href="">수입차매장</a></li>
+								<li><a href="">승용차매장</a></li>
+								<li><a href="">스포츠카매장</a></li>
+								<li><a href="">4륜/suv매장</a></li>
+								<li><a href="">밴/승합차매장</a></li>
+								<li><a href="">튜닝카매장</a></li>
+								<li><a href="">올드카매장</a></li>
+								<li><a href="">오토갤러리매장</a></li>
+							</ul>
+						</li>
+						<li><a href="">커뮤니티</a>
+							<ul>
+								<li><a href="">국산차매장</a></li>
+								<li><a href="">수입차매장</a></li>
+								<li><a href="">승용차매장</a></li>
+								<li><a href="">스포츠카매장</a></li>
+								<li><a href="">4륜/suv매장</a></li>
+								<li><a href="">밴/승합차매장</a></li>
+								<li><a href="">튜닝카매장</a></li>
+								<li><a href="">올드카매장</a></li>
+								<li><a href="">오토갤러리매장</a></li>
+							</ul>
+						</li>
+						<li><a href="">더보기</a>
+							<ul>
+								<li><a href="">국산차매장</a></li>
+								<li><a href="">수입차매장</a></li>
+								<li><a href="">승용차매장</a></li>
+								<li><a href="">스포츠카매장</a></li>
+								<li><a href="">4륜/suv매장</a></li>
+								<li><a href="">밴/승합차매장</a></li>
+								<li><a href="">튜닝카매장</a></li>
+								<li><a href="">올드카매장</a></li>
+								<li><a href="">오토갤러리매장</a></li>
+							</ul>
+						</li>
+						<li class="last_list"><i class="nav_more"></i>
+						</li>
+					</ul>
+					<div class="information">
+						<div class="nav_notice">
+							<h2>공지</h2><i class="nav_arrow"></i>
+							<span>보배드림 어플 업데이트 안내</span>
+						</div>
+						<div class="intoday">
+							<div class="today">
+								<span>오늘방문</span><span><strong>981,478</strong></span>
+							</div>
+							<div clas="yesterday">
+								<span>어제방문</span><span><strong>981,478</strong></span>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div> <!--nav-->
+			</div><!--header-->
+			<div class="body">
+				<div class="section">
+					<div class="top_two">
+						<div class="t_ad"><a href=""><img src="../image/bbd/main_ad.png" alt=""></a></div>
+						<div class="go_party"><a href=""><img src="../image/bbd/go_party.png" alt=""></a></div>
+					</div>
+						<div class="main_article">
+							<ul>
+								<li><a href="">
+									<div class="audi"><img src="../image/bbd/main_audi.png" alt=""></div></a>
+								</li>
+								<li><a href="">
+									<d
+									iv class="main_li"><a href=""><img src="../image/bbd/main_li_1.png" alt="">
+										<strong>국산중고차 특종매물</strong><br/>
+										<span>1988 현대 스텔라 1.5 88형 GLX<br/>극 희소, 1988년 올림픽 공식모델!!</span></a>
+									</div>
+								</li>
+								<li><a href=""><img src="../image/bbd/main_li_2.png" alt=""></a></li>
+								<li><a href=""><img src="../image/bbd/main_li_3.png" alt=""></a></li>
+							</ul>
+						</div>
+
+				</div><!--section-->
+				<div class="aside">
+				</div><!--aside-->
+			</div><!--body-->
+
+
+
+
+
+
+		</div><!--wrap-->
+
+
+
+	</body>
+</html>
