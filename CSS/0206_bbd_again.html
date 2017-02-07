@@ -21,7 +21,7 @@
 		.ir{font-size: 0; text-indent: -9999px; position:absolute; top:-9999px; left:-9999px;}
 
 		/*lay out*/
-		.wrap{width:990px; height:800px; margin: 0 auto; }
+		.wrap{width:990px; margin: 0 auto; }
 		.gnb{width: 990px; height: 30px;  margin: 0 auto; line-height: 30px; background-color: rgb(240, 240, 240);}
 		.header{width: 990px; height: 138px; }
 		.book_mark{
@@ -51,8 +51,8 @@
 		.icon_select{ width: 12px; height: 12px; margin-left: 5px; display:inline-block; background-image: url(../image/bbd/icon_menu_down.png);
 			background-repeat: no-repeat; vertical-align: middle;
 		}
-		.icon_mobile{ width: 8px; height: 12px; margin-right: 5px; display:inline-block; background-image: url(../image/bbd/icon_phone.png);
-			background-repeat: no-repeat; vertical-align: middle;
+		.icon_mobile{ width: 8px; height: 20px; margin-right: 5px; display:inline-block; background-image: url(../image/bbd/icon_phone.png);
+			background-repeat: no-repeat; vertical-align: middle; background-position: 0 2px ;
 		}
 		.gnb_my_option strong{color:blue;}
 
@@ -107,14 +107,12 @@
 		.information .intoday div span{ margin-right: 5px; color:#373737;}
 		.information .intoday div strong{color:#005dde;}
 
-
-
 		.nav_arrow{
 			width: 3px; height: 5px; background-image: url(../image/bbd/right_blue_arrow.png);
 			background-repeat: no-repeat; background-position: 6px 0;
 			padding-left:7px; display: inline-block; vertical-align: middle;
 		}
-		.body{width: 990px; border: 1px #F00 solid; margin-top: 84px; }
+		.body{width: 990px; border: 1px #F00 solid; margin: 84px auto 0; }
 		.section{width: 748px; height: 355px; float:left; border: 1px #CCC solid;}
 
 
@@ -122,11 +120,40 @@
 		.top_two{width: 746px; height: 112px;}
 		.t_ad{outline: 1px #CCC solid; width: 520px; height: 100px; float: left;}
 		.go_party{outline: 1px #CCC solid; width: 220px; height: 100px; float: right; }
-		.main_article{outline: 1px #CCC solid; width: 746px; height: 232px;}
-		.main_article li{float:left;}
-		.main_article .audi{outline: 1px #CCC solid; width: 400px; height: 233px;}
-		.main_li{width: 337px; height: 72px;}
-	  </style>
+
+		.main_article{outline: 1px #CCC solid; width: 746px; height: 233px;}
+		/*.main_article li{float:left;} */
+		.main_article .main_banner{position:relative; float:left; height:233px;}
+		.main_article .main_banner>span{outline: 1px #CCC solid; width: 400px; height: auto;}
+		.main_banner~li{border-top:1px #e4e6e5 solid; margin: 0 10px 0 403px; font-size: 11px; height: 79px;}
+		.main_banner+li{height: 76px; border-top:0 none;}
+		.main_banner+li~li img{margin-top: 4px;}
+		.main_banner+li+li+li img{margin-top: 3px;}
+		.main_banner~li img{outline:1px #CCC solid; float:left; margin-right:13px; }
+		.main_banner~li strong{display: block; padding-top: 13px; }
+
+
+		.main_article .main_banner .main_cover{
+			width: 400px; height: 44px; background-color: #3e3c34; background-repeat: no-repeat;
+			position:absolute; bottom:0; left:0; right:0; height:44px}
+		.main_cover>div{width: 390px; margin:5px;}
+		.main_cover>div strong{font-size:13px; color: #ffffff; }
+		.main_cover>div cite{font-size:9px; display:block; color: #ffffff; font-style: normal;}
+		.main_cover .btn_group{position:absolute; top:0; right:0; font-size: 0; text-align: center; width: 34px;}
+		.main_cover .btn_group input[type="button"]{border:none; text-indent: -9999px;
+			background-image: url(../image/bbd/both_arrow.png); height: 17px; width: 17px;
+			background-repeat: no-repeat; vertical-align:middle; cursor: pointer;
+		}
+		.main_cover .btn_group input[value="다음"]{background-position: -16px 0;		}
+		.main_cover .btn_group span{font-size: 12px; color:#FFF;}
+		.main_cover .btn_group .number{font-weight:bold; }
+		.main_cover .btn_group .number:after{ content: "/";  margin: 0 5px;}
+
+
+
+
+
+		</style>
 	<body>
 		<div class="wrap">
 			<div class="header">
@@ -283,23 +310,47 @@
 						<div class="t_ad"><a href=""><img src="../image/bbd/main_ad.png" alt=""></a></div>
 						<div class="go_party"><a href=""><img src="../image/bbd/go_party.png" alt=""></a></div>
 					</div>
-						<div class="main_article">
-							<ul>
-								<li><a href="">
-									<div class="audi"><img src="../image/bbd/main_audi.png" alt=""></div></a>
-								</li>
-								<li><a href="">
-									<d
-									iv class="main_li"><a href=""><img src="../image/bbd/main_li_1.png" alt="">
-										<strong>국산중고차 특종매물</strong><br/>
-										<span>1988 현대 스텔라 1.5 88형 GLX<br/>극 희소, 1988년 올림픽 공식모델!!</span></a>
+					<div class="main_article">
+						<ul>
+							<li class="main_banner">
+								<span>
+									<img src="../image/bbd/main_audi.png" alt="">
+								</span>
+								<div class="main_cover">
+									<div>
+										<strong>사이버매장 특종매물</strong>
+										<cite>2013 아우디 R8 5.2 V10 스파이더</cite></a>
 									</div>
-								</li>
-								<li><a href=""><img src="../image/bbd/main_li_2.png" alt=""></a></li>
-								<li><a href=""><img src="../image/bbd/main_li_3.png" alt=""></a></li>
-							</ul>
-						</div>
-
+									<div class="btn_group">
+											<span class="number">1</span><span>3</span>
+											<input type="button" value="이전">
+											<input type="button" value="다음">
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="../image/bbd/main_li_1.png" alt="">
+									<strong>국산중고차 특종매물</strong>
+									<cite>1988 현대 스텔라 1.5 88형 GLX 극 희소. 1988년 올림픽 공식모델!!</cite>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="../image/bbd/main_li_2.png" alt="">
+									<strong>국산중고차 특종매물</strong>
+									<cite>1988 현대 스텔라 1.5 88형 GLX 극 희소. 1988년 올림픽 공식모델!!</cite>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="../image/bbd/main_li_3.png" alt="">
+									<strong>국산중고차 특종매물</strong>
+									<cite>1988 현대 스텔라 1.5 88형 GLX 극 희소. 1988년 올림픽 공식모델!!</cite>
+								</a>
+							</li>
+						</ul>
+					</div><!--main_article-->
 				</div><!--section-->
 				<div class="aside">
 				</div><!--aside-->
