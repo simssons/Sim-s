@@ -73,7 +73,7 @@
 		.sub_menu li:first-child img{ padding-left: 0px; background-image: none;}
 
 		.nav{width: 990px; height: 76px; margin: 0 auto; border-bottom:1px rgb(226, 226, 226) solid; position:relative;}
-		.nav>ul{height: 38px; background-color:rgb(42, 72, 129);}
+		.nav>ul{height: 38px; background-color:#3b5999;}
 		.nav>ul>li{
 			float:left; line-height: 38px; font-size: 14px; font-weight: bold;
 			background-image: url(../image/bbd/short_vert.png);
@@ -82,7 +82,7 @@
 		}
 		.nav>ul>li>a{color:#FFF;}
 		.nav>ul>li:hover{background: rgb(93, 148, 255);}
-		.nav>ul>li>a{display:block; padding:0 11px; }
+		.nav>ul>li>a{display:block; padding:0 10px; }
 		.nav ul li:first-child{background-image: none;}
 		.nav ul ul{position:absolute; display:none;}
 		.nav li.on ul{display:block;}
@@ -92,7 +92,7 @@
 			background-repeat: no-repeat;
 			background-position: 0 15px ;
 		}
-		.nav ul ul li a{display:block; padding:0 11px;}
+		.nav ul ul li a{display:block; padding:0 5px; font-size: 12px;}
 		.nav_more{
 			width: 7px; height: 4px; background-image: url(../image/bbd/icon_down_arrow.png);
 			background-repeat: no-repeat; background-position: 0 0;
@@ -100,7 +100,15 @@
 		}
 		.nav>ul>li:nth-child(7){ padding-left: 10px; height:37px;}
 		.nav>ul>li:last-child{}
-		.nav_notice{position: absolute; top: 12px; right:11px; font-size:11px; color:#FFF; }
+		.information{position: absolute; top: 0; right:0; font-size:11px; color:#FFF; height: 76px;}
+		.information h2{font-size: 11px; display:inline-block; }
+		.information .nav_notice{height:38px; line-height: 38px;}
+		.information .intoday div{margin-right: 5px; display:inline-block; line-height: 38px;}
+		.information .intoday div span{ margin-right: 5px; color:#373737;}
+		.information .intoday div strong{color:#005dde;}
+
+
+
 		.nav_arrow{
 			width: 3px; height: 5px; background-image: url(../image/bbd/right_blue_arrow.png);
 			background-repeat: no-repeat; background-position: 6px 0;
@@ -171,7 +179,7 @@
 				</div>
 				<div class="nav">
 					<ul>
-						<li class="on"><a href="">인기중고차</a>
+						<li class="on"><a href="">사이버매장</a>
 							<ul>
 								<li><a href="">국산차매장</a></li>
 								<li><a href="">수입차매장</a></li>
@@ -252,27 +260,39 @@
 						<li class="last_list"><i class="nav_more"></i>
 						</li>
 					</ul>
-					<div class="nav_notice">
-						<strong>공지</strong><i class="nav_arrow"></i>
-						<span>보배드림 어플 업데이트 안내</span>
+					<div class="information">
+						<div class="nav_notice">
+							<h2>공지</h2><i class="nav_arrow"></i>
+							<span>보배드림 어플 업데이트 안내</span>
+						</div>
+						<div class="intoday">
+							<div class="today">
+								<span>오늘방문</span><span><strong>981,478</strong></span>
+							</div>
+							<div clas="yesterday">
+								<span>어제방문</span><span><strong>981,478</strong></span>
+							</div>
+						</div>
+						</div>
 					</div>
 				</div> <!--nav-->
 			</div><!--header-->
 			<div class="body">
 				<div class="section">
 					<div class="top_two">
-						<div class="t_ad"><img src="../image/bbd/main_ad.png" alt=""></div>
-						<div class="go_party"><img src="../image/bbd/go_party.png" alt=""></div>
+						<div class="t_ad"><a href=""><img src="../image/bbd/main_ad.png" alt=""></a></div>
+						<div class="go_party"><a href=""><img src="../image/bbd/go_party.png" alt=""></a></div>
 					</div>
 						<div class="main_article">
 							<ul>
-								<li><a href=""></a>
-									<div class="audi"><img src="../image/bbd/main_audi.png" alt=""></div>
+								<li><a href="">
+									<div class="audi"><img src="../image/bbd/main_audi.png" alt=""></div></a>
 								</li>
 								<li><a href="">
-									<div class="main_li"><img src="../image/bbd/main_li_1.png" alt=""></a>
+									<d
+									iv class="main_li"><a href=""><img src="../image/bbd/main_li_1.png" alt="">
 										<strong>국산중고차 특종매물</strong><br/>
-										<span>1988 현대 스텔라 1.5 88형 GLX<br/>극 희소, 1988년 올림픽 공식모델!!</span>
+										<span>1988 현대 스텔라 1.5 88형 GLX<br/>극 희소, 1988년 올림픽 공식모델!!</span></a>
 									</div>
 								</li>
 								<li><a href=""><img src="../image/bbd/main_li_2.png" alt=""></a></li>
