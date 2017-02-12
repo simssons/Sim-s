@@ -9,11 +9,13 @@
 @color-main:#35c37f;
 @color-master:#2B7F47;
 @color-line:@color-sub;
-
+@color-bg:#f1f1f1;
+@color-bordercolor:#E5E5E5;
+@color-header:#2AB271;
 @layoutwidth:700px;
 
 //reset
-body{font-family: 'Kanit','Noto Sans KR',sans-serif;}
+body{font-family: 'Kanit','Noto Sans KR',sans-serif; }
 body,html,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,p{margin:0; padding:0;}
 ul,ol,li{list-style:none;}
 img{border:0; vertical-align: top;}
@@ -22,13 +24,17 @@ a{
   text-decoration: none;
   color:@color-font;
 }
+h2,h3{margin: 5px 0;}
+h3,h2 a{color:#666; }
+
 
 //layout
 #header{
-    padding:20px 50px;
+  
 
+  padding:0 50px 20px 50px;
   text-align: center;
-  background-color:@color-master;
+  background-color:@color-header;
   h1{
     font-size:30px;
     font-weight: 300;
@@ -62,24 +68,25 @@ a{
 
     #content{
         width: @layoutwidth;
-        float:left;
+        float:right;
         }/*content*/
 
   width: 990px;
   margin:20px auto 0;
-  border:1px #F00 solid;
+
   .entry{
+    padding-bottom: 50px;
     .titleWrap{
       margin-bottom:30px;
       h2 a{
-        font-weight: 300;
+        font-weight: bold;
         border-bottom:2px @color-main solid;
           }
         }
     .tagTrail{
       border:1px @color-sub solid;
       border-radius:3px;
-      margin:35px 0 0;
+      margin:40px 0 0;
       padding:10px 20px;
       position:relative;
       .tagText{
@@ -102,6 +109,7 @@ a{
       }
     }
 	.comment{
+
 		margin-top:30px;
 		.commentList{
 			>ol li{ margin:20px 10px;
@@ -114,7 +122,7 @@ a{
 				width: 50px;
 				height: 50px;
 				border-radius:50%;
-				border:3px @color-master solid;
+				border:2px #2AB2A4 solid;
 				overflow: hidden;
 				float:left;
 				margin-right: 10px;
@@ -123,28 +131,26 @@ a{
 				}
 			}
 			span.control{
-                text-align: center;
+        text-align: center;
 				float:right;
-                margin:0;
-                +p{
-                    overflow:hidden;
-                    }
+        margin:0;
+        +p{
+          overflow:hidden;
+          }
 				a{
-                    display:inline-block;
+          display:inline-block;
 					font-size: 10px;
 					font-weight: lighter;
-                 }
-
-                span{
-
-                    border-radius:3px ;
+          }
+          span{
+            border-radius:3px ;
 				    height:14px;
 				    padding:0 3px;
                     background-color: @color-main;
                    color:@color-white;
                         }
                 .write span{
-                 background-color: @color-sub;
+                 background-color: @color-header;
 			    }
 			  }
 
@@ -161,29 +167,27 @@ a{
  			.date{
  				font-size: 9px;
  		 	}
-			textarea{
-				border: 1px @color-line solid;
-                border-radius: 10px;
-                width: 980px;
-                margin: 0 auto;
-                display: block;
-			}
+
 			input[value="댓글 달기"]{
-                float:right;
-                height: 20px;
+        float:right;
+        height: 25px;
 				color:@color-white;
-				background-color: @color-master;
+				background-color: @color-header;
 				border-radius: 5px;
 				border:0;
-				font-size: 9px;
+				font-size: 11px;
 				padding: 0 15px;
-                margin: 5px;
+        margin: 5px;
+        display:block;
 			    }
 
 		    }
 
         .textwrap{
-            border:1px #F00 solid;
+            border: 1px @color-bordercolor solid;
+            border-radius: 10px;
+            margin: 0 auto;
+            display: block;
             text-align:center;
             textarea{
                 border: 0 none;
@@ -198,7 +202,7 @@ a{
         text-align: center;
         padding: 20px 0;
         a{
-            border: 1px #F00 solid ;
+            border: 1px @color-bordercolor solid ;
             padding: 0 5px;
             border-radius: 3px;
             font-size: 12px;
@@ -208,11 +212,37 @@ a{
     }/*entry*/
 
     #sidebar{
-        margin-left: @layoutwidth;
-        padding: 0 10px;
-        border:1px #F00 solid;
+      color:@color-font;
+      .userID{
+        display:block;
+        margin-bottom: 5px;
+        font-size: 20px;
+        font-weight: bolder;
+      }
+      .blogDesc{
+        width: 220px;
+        margin-bottom: 20px;
+      }
+        margin-right: @layoutwidth;
+        padding:10px 30px 10px 30px;
+        .blogImage{
+          width: 220px; height: 220px;
+          border: 2px #2AB2A4 solid;
+          border-radius: 50%;
+          overflow: hidden;
+          img{ width: 100%; }
+        }
+        .category{
+          h3{margin-top: 20px;
+          }
+        }
+
+
+        position: fixed;
+        top: 157 px;
+
     }
-  }
+  } /*container*/
 
 
 
