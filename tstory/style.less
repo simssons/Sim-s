@@ -24,17 +24,28 @@ a{
   text-decoration: none;
   color:@color-font;
 }
-h2,h3{margin: 5px 0;}
-h3,h2 a{color:#666; }
+h2,h3{margin: 10px 0 5px; ;}
+h3,h2 a{color:#323232; }
 
+//option
+
+.under_bar{font-weight: bold; border-bottom:1px @color-bordercolor solid;}
 
 //layout
 #header{
-  
 
-  padding:0 50px 20px 50px;
-  text-align: center;
-  background-color:@color-header;
+    background-image: url(images/rocket.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:0 50px 20px 50px;
+    text-align: center;
+    height: 250px;
+
+    #titletitle{
+        display: inline-block;
+        vertical-align: middle;
+    }
+
   h1{
     font-size:30px;
     font-weight: 300;
@@ -47,9 +58,13 @@ h3,h2 a{color:#666; }
       span{
         font-size:12px;
         display:block;
+          }
+        }
       }
-    }
-  }
+
+
+
+
   .blogMenu{
       font-size:0;
       li{
@@ -139,16 +154,16 @@ h3,h2 a{color:#666; }
           }
 				a{
           display:inline-block;
-					font-size: 10px;
-					font-weight: lighter;
+    		font-size: 10px;
+    		font-weight: lighter;
           }
           span{
             border-radius:3px ;
-				    height:14px;
-				    padding:0 3px;
-                    background-color: @color-main;
-                   color:@color-white;
-                        }
+		    height:14px;
+		    padding:0 3px;
+            background-color: @color-main;
+            color:@color-white;
+                }
                 .write span{
                  background-color: @color-header;
 			    }
@@ -169,16 +184,16 @@ h3,h2 a{color:#666; }
  		 	}
 
 			input[value="댓글 달기"]{
-        float:right;
-        height: 25px;
+                float:right;
+                height: 25px;
 				color:@color-white;
 				background-color: @color-header;
 				border-radius: 5px;
 				border:0;
 				font-size: 11px;
 				padding: 0 15px;
-        margin: 5px;
-        display:block;
+                margin: 5px;
+                display:block;
 			    }
 
 		    }
@@ -212,36 +227,89 @@ h3,h2 a{color:#666; }
     }/*entry*/
 
     #sidebar{
+      max-width: 225px;
+      li{overflow:hidden;
+      text-overflow:ellipsis;}
+
       color:@color-font;
+      margin-right: @layoutwidth;
+      padding: 15px 50px 0 0;
       .userID{
         display:block;
         margin-bottom: 5px;
         font-size: 20px;
+        color: #323232;
         font-weight: bolder;
       }
       .blogDesc{
         width: 220px;
         margin-bottom: 20px;
       }
-        margin-right: @layoutwidth;
-        padding:10px 30px 10px 30px;
-        .blogImage{
-          width: 220px; height: 220px;
-          border: 2px #2AB2A4 solid;
-          border-radius: 50%;
-          overflow: hidden;
-          img{ width: 100%; }
+
+      .blogImage{
+        width: 220px; height: 220px;
+        border: 2px #bcd796 solid;
+        border-radius: 50%;
+        overflow: hidden;
+        img{ width: 100%; }
         }
         .category{
-          h3{margin-top: 20px;
-          }
+         h3{margin-top: 20px;}
+        }
+        div.search{
+            margin: 10px 0 ;
+        }
+        div.counter{
+            margin: 10px 0 ;
+        }
+        div.link{
+            margin: 10px 0 ;
         }
 
 
-        position: fixed;
-        top: 157 px;
+    }/*sidebar*/
+    .guestWrite{
+        margin-bottom: 30px;
+        position:relative;
+        .guep{
+            height: 154px;
+            border: 1px @color-bordercolor solid;
+            border-radius: 10px;
+            margin: 0 auto;
+            display: block;
+            text-align:center;
+            margin-bottom: 30px;
 
-    }
+        textarea{
+            border: 0 none;
+            width: 98%;
+            resize:none;
+            vertical-align: top;
+            height: 150px;
+                }
+            }
+        .lastguest{
+            float:right;
+            input[type="submit"]{
+                position: absolute;
+                bottom:70px;
+                right:0;
+                border:none;
+                float:right;
+                height: 25px;
+                color:@color-white;
+                background-color: @color-header;
+                border-radius: 5px;
+                border:0;
+                font-size: 11px;
+                padding: 0 15px;
+                margin: 5px;
+                display:block;
+            }
+          }
+        }/*guestWrite*/
+
+
   } /*container*/
 
 
