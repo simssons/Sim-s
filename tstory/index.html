@@ -12,11 +12,22 @@
   <s_t3>
     <div id="header">
       <!-- 01. 블로그 제목 -->
+      <div class="header_content">
         <h1><a href="[##_blog_link_##]">[##_title_##]<span>찬란하고 쓸만한 코딩</span></a></h1>
           <!-- 02. 블로그 메뉴 -->
           <div class="blogMenu">
             [##_blog_menu_##]
           </div>
+        </div>
+        <s_sidebar_element>
+            <!-- 검색 -->
+            <div class="search">
+                <s_search>
+                <input type="text" name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }"/>
+                <input value="검색" type="button" onclick="[##_search_onclick_submit_##]" class="submit"/>
+                </s_search>
+            </div>
+        </s_sidebar_element>
     </div> <!-- header close -->
 
   <div id="container">
@@ -274,10 +285,11 @@
             <div id="sidebar">
                 <s_sidebar_element>
                     <!-- 블로그 정보 -->
-                    <span class="userID under_bar">[##_blogger_##]</span>
+                    <a href="http://simssons.tistory.com/"><span class="userID under_bar">[##_blogger_##]</span></a>
                     <div class="blogDesc">[##_desc_##] </div>
+                    <div class="blog_fake"></div>
                     <div class="blogImageWrap">
-                        <div class="blogImage"><img src="[##_image_##]" alt="" /></div>
+                        <div class="blogImage"><a href="http://simssons.tistory.com/"><img src="[##_image_##]" alt="" /></a></div>
                     </div>
                 </s_sidebar_element>
                 <s_sidebar_element>
@@ -318,15 +330,7 @@
                         </ul>
                     </div>
                 </s_sidebar_element>
-                <s_sidebar_element>
-                    <!-- 검색 -->
-                    <div class="search">
-                        <s_search>
-                        <input type="text" name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }"/>
-                        <input value="검색" type="button" onclick="[##_search_onclick_submit_##]" class="submit"/>
-                        </s_search>
-                    </div>
-                </s_sidebar_element>
+
                 <s_sidebar_element>
                     <!-- 링크 -->
                     <div class="link">
