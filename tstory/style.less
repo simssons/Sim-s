@@ -267,27 +267,27 @@ h3,h2 a{color:#323232; }
 
       .blog_fake{
           width: 220px; height: 220px;
-          border: 2px #bcd796 solid;
+          border: 1px #bcd796 solid;
           border-radius: 50%;
           position:absolute;
           z-index:10;
-          background-color: transparent;
+
           &:hover{
               animation: mymove 5s infinite; box-shadow:1px 1px 20px #000 inset;
               }
 
            @keyframes mymove {
-              0%   {top: -500px;  right:5000px; background-image: url(images/simka.png); width: 0px; height: 0;}
               20% {top: 0; left: 0; background-image: url(images/simka.png); width: 300px; height: 300px;}
-              40% {top: 100px; left: 50px; background-image: url(images/simka.png); width: 500px; height: 500px;}
-              60% {top: -500px; left: -500px; background-image: url(images/thumb_crop_resize.jpg); width: 2000px; height: 2000px;}
+              0%   {top: -500px;  right:5000px; background-image: url(images/simka.png); width: 0px; height: 0;  transform:rotate(-500deg);}
+              40% {top: 100px; left: 50px; background-image: url(images/simka.png); width: 500px; height: 500px; }
+              60% {top: -500px; left: -500px; background-image: url(images/thumb_crop_resize.jpg); width: 2000px; height: 2000px; border-radius:0;}
               80% {top: 0; left: 100px; background-image: url(images/thumb_crop_resize.jpg); width: 500px; height: 500px;}
               100% {top: 0; left: 0;  background-image: url(images/simka.png); width: 225px; height: 225px;}
               }
       }
       .blogImage{
         width: 220px; height: 220px;
-        border: 2px #bcd796 solid;
+        border: 1px #bcd796 solid;
         border-radius: 50%;
         overflow: hidden;
         position: relative;
