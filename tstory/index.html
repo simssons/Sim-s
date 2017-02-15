@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="robots" content="index,follow">
   <meta charset="UTF-8">
+  <meta name="description" content="[##_desc_##]">
+  <meta name="keywords" content="webpublisher,웹퍼블리셔,HTML,CSS,IT,front-end,피카츄,">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="google-site-verification" content="zWEha0c6BMvLGugeOHouXlBKgXHApU_4wHvh2TTldBg" />
   <link rel="stylesheet" href="./style.css">
   <link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
   <title>[##_title_##] :: [##_page_title_##]</title>
@@ -13,7 +17,7 @@
     <div id="header">
       <!-- 01. 블로그 제목 -->
       <div class="header_content">
-        <h1><a href="[##_blog_link_##]">[##_title_##]<span>찬란하고 쓸만한 코딩</span></a></h1>
+        <h1><a href="[##_blog_link_##]">[##_title_##]<span>The Publisher</span></a></h1>
           <!-- 02. 블로그 메뉴 -->
           <div class="blogMenu">
             [##_blog_menu_##]
@@ -23,7 +27,7 @@
             <!-- 검색 -->
             <div class="search">
                 <s_search>
-                <input type="text" name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }"/>
+                <input type="text" name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }" placeholder="Search"; class="font-fc"; /><br/>
                 <input value="검색" type="button" onclick="[##_search_onclick_submit_##]" class="submit"/>
                 </s_search>
             </div>
@@ -352,6 +356,28 @@
                         <span class="today">Today : [##_count_today_##]</span>
                         <span class="yesterday">Yesterday : [##_count_yesterday_##]</span>
                     </div>
+                </s_sidebar_element>
+
+                <s_sidebar_element>
+                    <!-- 배너모듈 - 태터툴즈 -->
+                    <div class="botton">
+                        <a href="http://www.tattertools.com" onclick="window.open(this.href); return false">
+                            <img src="./images/tattertools.gif" alt="Tattertools" /> </a>
+                    </div>
+                </s_sidebar_element>
+                <s_sidebar_element>
+                        <!-- 배너모듈 - 이올린 -->
+                    <div class="botton">
+                        <a href="http://www.eolin.com" onclick="window.open(this.href); return false">
+                            <img src="http://tattertools.com/images/logo_eolin.gif" alt="Eolin" /> </a>
+                    </div>
+                </s_sidebar_element>
+                <s_sidebar_element>
+                        <!-- 배너모듈 - Rss Feed-->
+                        <div class="botton">
+                            <a href="[##_rss_url_##]" onclick="window.open(this.href); return false">
+                            <img src="./images/rss.gif" alt="rss"/> </a>
+                            </div>
                 </s_sidebar_element>
 
 
