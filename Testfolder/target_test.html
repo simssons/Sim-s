@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+
+  h1 {
+     font: bold 30px/1.5 "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+     -webkit-transition: color 0.5s ease;
+     -moz-transition: color 0.5s ease;
+     -o-transition: color 0.5s ease;
+     -ms-transition: color 0.5s ease;
+     transition: color 0.5s ease;
+
+  }
+
+  h1:target {
+     font-size: 50px;
+     text-decoration: underline;
+     color: #37aee4;
+  }
+
+  h1:target + p {
+     background: #f7f7f7;
+     padding: 10px;
+  }
+
+  </style>
+
+</head>
+<body>
+
+<h1 id="one">Heading One</h1>
+<p>Lorem ipsum...</p>
+
+<h1 id="two">Heading Two</h1>
+<p>Lorem ipsum...</p>
+
+<h1 id="three">Heading Three</h1>
+<p>Lorem ipsum...</p>
+
+<h1 id="four">Heading Four</h1>
+<p>Lorem ipsum...</p>
+</body>
+</html>
