@@ -1,0 +1,135 @@
+// out: tg.css, sourcemap: false, compress: true
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+body{font-family: 'Oswald',sans-serif; }
+
+*{margin:0; padding:0;}
+ul,ol{list-style: none;}
+a{text-decoration: none; color:#000;}
+img{vertical-align: top;}
+
+header{height: 80px; }
+
+// 옵션
+@color-tgmain:#009599;
+@color-font:#9C9C9C;
+.fontfif{font-size: 15px;}
+
+
+
+
+.header_container{
+	background-color: #000;
+	height: 80px;
+	margin:0 auto;
+	position: relative;
+	.logo{
+		position: absolute;
+		width: 63px; height: 43px;
+		top:18px;
+		left:30px;
+		vertical-align: middle;
+	}
+	h1{
+		font-size: 0;
+		line-height: 0;
+		overflow: hidden;
+
+	}
+	.mainNavi{
+		>ul{
+			padding-left: 80px;
+			height: 80px;
+			text-align: center;
+			li{
+				width: 220px;
+				display:inline-block;
+
+				a{
+					line-height: 80px;
+					color:#FFF;
+					font-size:15px;
+					padding:0 15px;
+					display:block;
+					text-align:center;
+					white-space: nowrap;
+					font-weight: 600;
+					position:relative;
+
+					span{
+						transition: 0.25s linear;
+					}
+
+					span.bt_line{
+						height: 3px;
+						width: 0;
+						position:absolute;
+			            background-color:@color-tgmain;
+			            bottom:0;
+			            left:-30px;
+			            transition: 0.25s linear;
+					}
+				}
+			.depth_wrap{
+				width: 220px;
+				padding:25px 0 ;
+				position: absolute;
+				top:80px;
+				ul.depth{
+					position:relative;
+					li{
+						height: 29px ;
+						margin:5px 0;
+						float:none;
+						display: block;
+						a{
+							line-height: 29px;
+							color:#9C9C9C;
+							span{
+								height: 16px;
+								font-size: 14px
+							}
+						}
+					}
+				}// ul.depth
+				&:before{
+					content: "";
+					width: 1px;
+					height: 300px;
+					background: #9C9C9C;
+					position: absolute;
+					left: 0;
+					top: 0;
+					display: block;
+				}
+				&:after{
+					content: "";
+					width: 1px;
+					height: 300px;
+					background: #9C9C9C;
+					position: absolute;
+					right: 0;
+					top: 0;
+					display: block;
+				}
+
+			}
+
+			}
+		.hover_letter:hover .bt_line{
+			width:100%;
+			bottom:0;
+			left:0;
+		}
+		.hover_letter:hover span{
+			color:@color-tgmain;
+		}
+		.depth:hover span{
+			color:@color-tgmain;
+		}
+
+		}
+
+	}// mainNavi
+
+}// header;
