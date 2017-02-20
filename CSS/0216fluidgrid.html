@@ -28,166 +28,166 @@
         border:1px #F00 solid;
         margin-right:10px;
     }
-        .grid{
-            outline:1px #F00 solid;
+    .grid{
+        outline:1px #F00 solid;
 
-        }
-        ul{
-            list-style:none;
-            margin:0;
-            padding:0;
+    }
+      ul{
+          list-style:none;
+          margin:0;
+          padding:0;
 
-        }
-        li{
-            width:25%;
-            outline:1px #F00 solid;
-            float:left;
-            overflow:hidden;
-            transition:1s;
-            position: relative;
-        }
-        li img{
-            width:100%;
-            vertical-align:top;
-            transition:1s ease;
+      }
+      li{
+          width:25%;
+          outline:1px #F00 solid;
+          float:left;
+          overflow:hidden;
+          transition:1s;
+          position: relative;
+      }
+      li img{
+          width:100%;
+          vertical-align:top;
+          transition:1s ease;
 
-        }
-
-
-        li:hover img{
-            transform:scale(1.5,1.5) rotate(15deg);
-        }
-
-        li:after{
-            content:"";
-            position:absolute;
-            left:0;
-            top:0;
-            right:0;
-            bottom:0;
-            background-color: rgba(0,177,255,0.5);
-            opacity:0;
-            transition: 1s;
-        }
-
-        li:hover:after{
-            opacity:1;
-        }
-
-        li div{
-
-            outline:1px #F00 solid;
-            margin:5px;
-        }
-
-        li .txt{
-            position:absolute;
-            left:0;
-            top:0;
-            z-index: 10;
-            color:#FFF;
-            font-size:20px;
-            top:50%;
-            line-height: 20p;
-            margin-top:-10px;
-            width:100%;
-            text-align: center;
-        }
-        li .txt .와꾸{
-            display:inline-block;
-            border:1px #F00 solid;
-            padding: 10px 15px;
-            position:relative;
-            width: 100px;
-        }
+      }
 
 
-        li .txt .와꾸 .line1{
-            position:absolute;
-            height:4px;
-            background-color: #fff;
-            width: 0%;
-            top:0;
-            left:0;
-            transition: linear;
+      li:hover img{
+          transform:scale(1.5,1.5) rotate(15deg);
+      }
 
-        }
-        li .txt .와꾸 .line2{
-            position:absolute;
-            height:0;
-            width:4px;
-            background-color: #fff;
-            top:0;
-            right:0;
-            transition: 0.05s linear;
-            transition-delay:0.05s;
-        }
-        li .txt .와꾸 .line3{
-            position:absolute;
-            height:4px;
-            width:0;
-            background-color: #fff;
-            bottom:0;
-            right:0;
-            transition: 0.05s linear;
-            transition-delay:0.1s;
-        }
-        li .txt .와꾸 .line4{
-            position:absolute;
-            height:0;
-            width:4px;
-            background-color: #fff;
-            bottom:0;
-            left:0;
-            transition: 0.05s linear;
-            transition-delay:0.15s;
-        }
-        .txt:before{
-            content:"";
-            width: 20px;
-            height: 3px;
-            background: #fff;
-            top: -12px;
-            /*margin-left: -10px;*/
-            /*left: 50%;*/
-            /*position: absolute;*/
-            margin: 0 auto;
-            content: "";
-            transition: 0.5s linear;
-            transform-origin: center;
-            display: block;
+      li:after{
+          content:"";
+          position:absolute;
+          left:0;
+          top:0;
+          right:0;
+          bottom:0;
+          background-color: rgba(0,177,255,0.5);
+          opacity:0;
+          transition: 1s;
+      }
 
-        }
+      li:hover:after{
+          opacity:1;
+      }
 
-        li:hover .txt:before{
-            width:0%;
+      li div{
 
-        }
+          outline:1px #F00 solid;
+          margin:5px;
+      }
 
-        li:hover .와꾸 .line1{
-            width: 100%;
-        }
-
-        li:hover .와꾸 .line2{
-            height:100%;
-        }
-
-        li:hover .와꾸 .line3{
-            width:100%;
-        }
-        li:hover .와꾸 .line4{
-            height:100%;
-        }
+      li .txt{
+          position:absolute;
+          left:0;
+          top:0;
+          z-index: 10;
+          color:#FFF;
+          font-size:20px;
+          top:50%;
+          line-height: 20p;
+          margin-top:-10px;
+          width:100%;
+          text-align: center;
+      }
+      li .txt .와꾸{
+          display:inline-block;
+          border:1px #F00 solid;
+          padding: 10px 15px;
+          position:relative;
+          width: 100px;
+      }
 
 
-        @media screen and (max-width:480px) {
-             .grid li{
-                 float:none;
-                 width:auto;
-             }
-        }
+      li .txt .와꾸 .line1{
+          position:absolute;
+          height:4px;
+          background-color: #fff;
+          width: 0%;
+          top:0;
+          left:0;
+          transition: linear;
 
-    </style>
+      }
+      li .txt .와꾸 .line2{
+          position:absolute;
+          height:0;
+          width:4px;
+          background-color: #fff;
+          top:0;
+          right:0;
+          transition: 0.05s linear;
+          transition-delay:0.05s;
+      }
+      li .txt .와꾸 .line3{
+          position:absolute;
+          height:4px;
+          width:0;
+          background-color: #fff;
+          bottom:0;
+          right:0;
+          transition: 0.05s linear;
+          transition-delay:0.1s;
+      }
+      li .txt .와꾸 .line4{
+          position:absolute;
+          height:0;
+          width:4px;
+          background-color: #fff;
+          bottom:0;
+          left:0;
+          transition: 0.05s linear;
+          transition-delay:0.15s;
+      }
+      .txt:before{
+          content:"";
+          width: 20px;
+          height: 3px;
+          background: #fff;
+          top: -12px;
+          /*margin-left: -10px;*/
+          /*left: 50%;*/
+          /*position: absolute;*/
+          margin: 0 auto;
+          content: "";
+          transition: 0.5s linear;
+          transform-origin: center;
+          display: block;
+
+      }
+
+      li:hover .txt:before{
+          width:0%;
+
+      }
+
+      li:hover .와꾸 .line1{
+          width: 100%;
+      }
+
+      li:hover .와꾸 .line2{
+          height:100%;
+      }
+
+      li:hover .와꾸 .line3{
+          width:100%;
+      }
+      li:hover .와꾸 .line4{
+          height:100%;
+      }
+
+
+      @media screen and (max-width:480px) {
+           .grid li{
+               float:none;
+               width:auto;
+           }
+      }
+
+  </style>
 </head>
 <body>
 
