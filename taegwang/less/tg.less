@@ -29,9 +29,11 @@ header{height: 80px; }
 .wrap{
 	.header_container{
 		background-color: #000;
+		width: 100%;
 		height: 80px;
 		margin:0 auto;
-		position: relative;
+		position: fixed;
+		z-index: 10000;
 		.hidden_mnbar{
 			display: block;
 			position: absolute;
@@ -384,9 +386,66 @@ header{height: 80px; }
 				width: 100%;
 			}
 		}
+	}
+
+	.frontier_ad{
+		display: block;
+		position: absolute;
+		top:99px;
+		right:5%;
+		width: 321px;
+		height: 170px;
+		img{
+			width: 100%;
+		}
+	}
+// end of section
+
+
+//footer
+
+	footer{
+		background-color: #080808;
+	.footer_wrap{
+		width: 100%;
+		background-color: #191919;
+
+		.footer_ul_wrap{
+			width: 1200px;
+			height: 70px;
+			font-size: 0;
+			margin:0 auto;
+			ul{
+				li{
+					width: 50%;
+					height: 70px;
+					display: inline-block;
+					font-size: 12px;
+					text-align: center;
+					a{
+						line-height: 70px;
+						color:#FFF;
+						span{
+							display: inline-block;
+							width: 100%;
+						}
+					}
+				}
+			}
+		} // footer_ul_wrap
+		.footer_c_info{
+			width: 1200px;
+			margin: 0 auto;
+			padding: 84px 0;
+			color:#b5b5b5;
+		}
+
+
 
 
 	}
+}
+//footer
 
 
 
