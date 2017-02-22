@@ -446,6 +446,9 @@ header {
   color: #ec7a00;
   font-size: 17px;
 }
+.wrap .mn_map .map_letter5 span {
+  color: #ec7a00;
+}
 .wrap .mn_map .map_letter5 .map_line01 {
   display: block;
   position: absolute;
