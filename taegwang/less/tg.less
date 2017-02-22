@@ -1,4 +1,4 @@
-// out: tg.css, sourcemap: false, compress: true
+// out: tg.css, sourcemap: false, compress: flase
 
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 body{font-family: 'Oswald','Calibri', sans-serif; }
@@ -279,28 +279,26 @@ header{height: 80px; }
 					font-weight: 600;
 					// background-color: #F00;
 					text-align: center;
-					.line01{
-						position:absolute;
-						top:0;
-						left:0;
-						background-color: #FFF;
-						height: 4px;
-						width: 0%;
-						transition: 0.5s linear;
-					}
-					.line02{
-						position:absolute;
-						top:0;
-						right:0;
-						background-color: #FFF;
-						height: 0%;
-						width: 4px;
-						transition: 0.5s linear;
-					}
+					// .line01{
+					// 	position:absolute;
+					// 	top:0;
+					// 	left:0;
+					// 	background-color: #FFF;
+					// 	height: 4px;
+					// 	width: 0%;
+					// 	transition: 0.5s linear;
+					// }
 
-
+					// .line02{
+					// 	position:absolute;
+					// 	top:0;
+					// 	right:0;
+					// 	background-color: #FFF;
+					// 	height: 0%;
+					// 	width: 4px;
+					// 	transition: 0.5s linear;
+					// }
 				}
-
 			}
 		} // li
 
@@ -444,12 +442,6 @@ header{height: 80px; }
 			line-height: 140%;
 			left: 372px;
     		top: 389px;
-
-
-			strong{
-				font-weight: 300;
-				display: block;
-			}
 			.map_line01{
 				display: block;
 				position: absolute;
@@ -467,6 +459,41 @@ header{height: 80px; }
 				right: -66px;
     			top: -24px;
 				background: rgba(255,255,255,0.4);
+			}
+		}
+		.map_letter5{
+			font-family: 'Calibri';
+			font-size: 15px;
+			color: #fff;
+			text-transform: uppercase;
+			text-align: left;
+			position: absolute;
+			line-height: 140%;
+			left: 1050px;
+			top: 235px;
+			strong{
+				font-weight: 300;
+				display: block;
+				color:#ec7a00;
+				font-size: 17px;
+			}
+			.map_line01{
+				display: block;
+				position: absolute;
+				width: 1px;
+				height: 97px;
+				left: -179px;
+				top: -74px;
+				background: rgba(236,122,0,0.4);
+			}
+			.map_line02{
+				display: block;
+				position: absolute;
+				width: 166px;
+				height: 1px;
+				left: -178px;
+    			top: 22px;
+				background: rgba(236,122,0,0.4);
 			}
 		}
 
@@ -710,16 +737,78 @@ header{height: 80px; }
 	transform: scale(1.1,1.1);
 }
 
+.grid_letter_inner .line01{
+		position:absolute;
+		top:0;
+		left:0;
+		background-color: #FFF;
+		height: 4px;
+		width: 0%;
+		transition: 0.5s linear;
+}
+
 li.grid_hover_li:hover .line01{
 	width: 100%;
 }
+.grid_letter_inner .line02{
+		position:absolute;
+		top:0;
+		right:0;
+		background-color: #FFF;
+		height: 0%;
+		width: 4px;
+		transition: 0.5s linear;
+		transition-delay: 0.5s;
+}
+
+li.grid_hover_li:hover .line02{
+	height: 100%;
+}
+
+.grid_letter_inner .line03{
+		position:absolute;
+		bottom:0;
+		right:0;
+		background-color: #FFF;
+		height: 4px;
+		width: 0%;
+		transition: 0.5s linear;
+		transition-delay: 1s;
+}
+
+li.grid_hover_li:hover .line03{
+	width: 100%;
+}
+.grid_letter_inner .line04{
+		position:absolute;
+		bottom:0;
+		left:0;
+		background-color: #FFF;
+		height: 0%;
+		width: 4px;
+		transition: 0.5s linear;
+		transition-delay: 1.5s;
+}
+
+li.grid_hover_li:hover .line04{
+	height: 100%;
+}
 
 
+
+
+
+
+
+
+
+
+//아래는 짧은 흰색 라인
 .grid_letter_inner:before{
 	width: 20px;
 	height: 3px;
 	background: #fff;
-	top: -22px;
+	top: 0;
 	margin-left: -10px;
 	left: 50%;
 	position: absolute;
