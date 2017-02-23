@@ -31,8 +31,8 @@ header {
   left: -9999px;
 }
 .wrap header .white_cover {
-  height: 100%;
   background: #FFF;
+  overflow: hidden;
   position: relative;
   z-index: 1;
 }
@@ -41,8 +41,7 @@ header {
   width: 100%;
   height: 80px;
   margin: 0 auto;
-  position: fixed;
-  z-index: 10000;
+  z-index: 9999;
 }
 .wrap header .white_cover .header_container .logo {
   position: absolute;
@@ -57,19 +56,18 @@ header {
   line-height: 0;
   overflow: hidden;
 }
-.wrap header .white_cover .header_container .mainNavi > ul {
-  font-size: 0;
-  width: 1200px;
+.wrap header .white_cover .header_container .mainNavi {
   height: 80px;
-  text-align: center;
+  font-size: 0;
+  width: 1100px;
   position: relative;
   margin: 0 auto;
 }
-.wrap header .white_cover .header_container .mainNavi > ul li {
+.wrap header .white_cover .header_container .mainNavi li {
   width: 220px;
   float: left;
 }
-.wrap header .white_cover .header_container .mainNavi > ul li a {
+.wrap header .white_cover .header_container .mainNavi li a {
   letter-spacing: 0.05em;
   line-height: 80px;
   color: #FFF;
@@ -81,7 +79,7 @@ header {
   font-weight: bold;
   position: relative;
 }
-.wrap header .white_cover .header_container .mainNavi > ul li a span.bt_line {
+.wrap header .white_cover .header_container .mainNavi li a span.bt_line {
   height: 3px;
   width: 0;
   position: absolute;
@@ -90,45 +88,44 @@ header {
   left: -30px;
   transition: 0.25s linear;
 }
-.wrap header .white_cover .header_container .mainNavi > ul li .depth_wrap {
-  width: 220px;
+.wrap header .white_cover .header_container .mainNavi li .depth_wrap {
   padding: 25px 0 ;
+  display: none;
 }
-.wrap header .white_cover .header_container .mainNavi > ul li .depth_wrap ul.depth {
+.wrap header .white_cover .header_container .mainNavi li .depth_wrap ul.depth {
   position: relative;
 }
-.wrap header .white_cover .header_container .mainNavi > ul li .depth_wrap ul.depth li {
+.wrap header .white_cover .header_container .mainNavi li .depth_wrap ul.depth li {
+  float: none;
   height: 29px ;
   margin: 5px 0;
-  float: none;
-  display: block;
 }
-.wrap header .white_cover .header_container .mainNavi > ul li .depth_wrap ul.depth li a {
+.wrap header .white_cover .header_container .mainNavi li .depth_wrap ul.depth li a {
   line-height: 29px;
   color: #9C9C9C;
 }
-.wrap header .white_cover .header_container .mainNavi > ul li .depth_wrap ul.depth li a span {
+.wrap header .white_cover .header_container .mainNavi li .depth_wrap ul.depth li a span {
   height: 16px;
   font-size: 14px;
 }
-.wrap header .white_cover .header_container .mainNavi > ul li .depth_wrap:before {
+.wrap header .white_cover .header_container .mainNavi li .depth_wrap:before {
   content: "";
   width: 1px;
-  height: 180px;
+  height: 191px;
   background: #9C9C9C;
   position: absolute;
   top: 80px;
   display: block;
 }
-.wrap header .white_cover .header_container .mainNavi > ul .hover_letter:hover .bt_line {
+.wrap header .white_cover .header_container .mainNavi .hover_letter:hover .bt_line {
   width: 100%;
   bottom: 0;
   left: 0;
 }
-.wrap header .white_cover .header_container .mainNavi > ul .hover_letter:hover span {
+.wrap header .white_cover .header_container .mainNavi .hover_letter:hover span {
   color: #009599;
 }
-.wrap header .white_cover .header_container .mainNavi > ul .depth:hover span {
+.wrap header .white_cover .header_container .mainNavi .depth:hover span {
   color: #009599;
 }
 .wrap header .white_cover .header_container .right_gnb {
@@ -185,9 +182,7 @@ header {
   top: 22px;
   right: 10px;
   transition: all .3s ease;
-  z-index: 2300;
   display: block;
-  overflow: hidden;
   background-color: none;
   transition: all 0.3s ease;
 }
@@ -223,7 +218,7 @@ header {
 }
 .wrap section .mn_slogan {
   position: absolute;
-  z-index: 1000;
+  z-index: 1;
   top: 50%;
   margin-top: -65.1px;
   width: 100%;
@@ -250,7 +245,7 @@ header {
   width: 100%;
   text-align: center;
   line-height: 22px;
-  z-index: 1000;
+  z-index: 1;
 }
 .wrap section .mn_grid li.grid_hover_li .grid_letter_wrap .grid_letter_inner {
   width: 160px;
@@ -482,7 +477,7 @@ header {
   font-weight: 600;
   letter-spacing: 0.03em;
   color: #FFF;
-  z-index: 500;
+  z-index: 1;
 }
 .wrap section .mn_two_grid ul li .mn_span2 {
   position: absolute;
@@ -494,7 +489,7 @@ header {
   font-weight: 300;
   letter-spacing: 0;
   color: #FFF;
-  z-index: 500;
+  z-index: 1;
 }
 .wrap section .frontier {
   width: 100%;

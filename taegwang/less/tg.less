@@ -27,17 +27,17 @@ header{height: 80px; }
 .wrap{
 	header{
 	.white_cover{
-		height: 100%;
 		background: #FFF;
-		position:relative;
+		overflow: hidden;
+		position: relative;
 		z-index: 1;
 		.header_container{
 			background-color: #000;
 			width: 100%;
 			height: 80px;
 			margin:0 auto;
-			position: fixed;
-			z-index: 10000;
+			// position: fixed;
+			z-index: 9999;
 			// .hidden_mnbar{
 			// 	display: block;
 			// 	position: absolute;
@@ -61,14 +61,11 @@ header{height: 80px; }
 
 			}
 			.mainNavi{
-				>ul{
-					font-size: 0;
-					width: 1200px;
-					height: 80px;
-					text-align: center;
-					position: relative;
-					margin:0 auto;
-
+				height: 80px;
+				font-size: 0;
+				width: 1100px;
+				position: relative;
+				margin:0 auto;
 					li{
 						width: 220px;
 						// display:inline-block;
@@ -101,21 +98,17 @@ header{height: 80px; }
 							}
 						}
 					.depth_wrap{
-								width: 220px;
 								padding:25px 0 ;
+								display: none;
 								// position: absolute;
 								// top:80px;
-								// visibility: hidden;
 
-
-
-									ul.depth{
+							ul.depth{
 									position:relative;
 									li{
+										float: none;
 										height: 29px ;
 										margin:5px 0;
-										float:none;
-										display: block;
 										a{
 											line-height: 29px;
 											color:#9C9C9C;
@@ -130,7 +123,7 @@ header{height: 80px; }
 							&:before{
 								content: "";
 								width: 1px;
-								height: 180px;
+								height: 191px;
 								background: #9C9C9C;
 								position: absolute;
 								// left: 0;
@@ -152,11 +145,6 @@ header{height: 80px; }
 				.depth:hover span{
 					color:@color-tgmain;
 				}
-
-				}		// ul
-
-
-
 			}// mainNavi
 
 				.right_gnb{
@@ -215,9 +203,9 @@ header{height: 80px; }
 						 top: 22px;
 						 right:  10px;
 						 transition:all .3s ease;
-						 z-index:2300;
+						//  z-index:1;
 						 display: block;
-						 overflow: hidden;
+						//  overflow: hidden;
 						 background-color: none;
 						 transition:all 0.3s ease;
 
@@ -242,7 +230,7 @@ section{
 	}
 	.mn_slogan{
 		position:absolute;
-		z-index: 1000;
+		z-index: 1;
 		top:50%;
 		margin-top: -65.1px;
 		width: 100%;
@@ -268,7 +256,7 @@ section{
 				width: 100%;
 				text-align: center;
 				line-height: 22px;
-				z-index: 1000;
+				z-index: 1;
 				.grid_letter_inner{
 					width: 160px;
 					display: inline-block;
@@ -528,7 +516,7 @@ section{
 					font-weight: 600;
 					letter-spacing: 0.03em;
 					color:#FFF;
-					z-index: 500;
+					z-index: 1;
 				}
 				.mn_span2{
 					position:absolute;
@@ -540,7 +528,7 @@ section{
 					font-weight: 300;
 					letter-spacing: 0;
 					color:#FFF;
-					z-index: 500;
+					z-index: 1;
 				}
 			}
 		}// ul
