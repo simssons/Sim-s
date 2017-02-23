@@ -30,7 +30,13 @@ header {
   top: -9999px;
   left: -9999px;
 }
-.wrap .header_container {
+.wrap header .white_cover {
+  height: 100%;
+  background: #FFF;
+  position: relative;
+  z-index: 1;
+}
+.wrap header .white_cover .header_container {
   background-color: #000;
   width: 100%;
   height: 80px;
@@ -38,17 +44,7 @@ header {
   position: fixed;
   z-index: 10000;
 }
-.wrap .header_container .hidden_mnbar {
-  display: block;
-  position: absolute;
-  top: 80px;
-  width: 100%;
-  background-color: #FF0;
-  height: 180px;
-  border-bottom: 1px #9C9C9C solid;
-  visibility: hidden;
-}
-.wrap .header_container .logo {
+.wrap header .white_cover .header_container .logo {
   position: absolute;
   width: 63px;
   height: 43px;
@@ -56,12 +52,12 @@ header {
   left: 30px;
   vertical-align: middle;
 }
-.wrap .header_container h1 {
+.wrap header .white_cover .header_container h1 {
   font-size: 0;
   line-height: 0;
   overflow: hidden;
 }
-.wrap .header_container .mainNavi > ul {
+.wrap header .white_cover .header_container .mainNavi > ul {
   font-size: 0;
   width: 1200px;
   height: 80px;
@@ -69,11 +65,11 @@ header {
   position: relative;
   margin: 0 auto;
 }
-.wrap .header_container .mainNavi > ul li {
+.wrap header .white_cover .header_container .mainNavi > ul li {
   width: 220px;
-  display: inline-block;
+  float: left;
 }
-.wrap .header_container .mainNavi > ul li a {
+.wrap header .white_cover .header_container .mainNavi > ul li a {
   letter-spacing: 0.05em;
   line-height: 80px;
   color: #FFF;
@@ -85,7 +81,7 @@ header {
   font-weight: bold;
   position: relative;
 }
-.wrap .header_container .mainNavi > ul li a span.bt_line {
+.wrap header .white_cover .header_container .mainNavi > ul li a span.bt_line {
   height: 3px;
   width: 0;
   position: absolute;
@@ -94,57 +90,53 @@ header {
   left: -30px;
   transition: 0.25s linear;
 }
-.wrap .header_container .mainNavi > ul li .depth_wrap {
+.wrap header .white_cover .header_container .mainNavi > ul li .depth_wrap {
   width: 220px;
   padding: 25px 0 ;
-  position: absolute;
-  top: 80px;
-  visibility: hidden;
 }
-.wrap .header_container .mainNavi > ul li .depth_wrap ul.depth {
+.wrap header .white_cover .header_container .mainNavi > ul li .depth_wrap ul.depth {
   position: relative;
 }
-.wrap .header_container .mainNavi > ul li .depth_wrap ul.depth li {
+.wrap header .white_cover .header_container .mainNavi > ul li .depth_wrap ul.depth li {
   height: 29px ;
   margin: 5px 0;
   float: none;
   display: block;
 }
-.wrap .header_container .mainNavi > ul li .depth_wrap ul.depth li a {
+.wrap header .white_cover .header_container .mainNavi > ul li .depth_wrap ul.depth li a {
   line-height: 29px;
   color: #9C9C9C;
 }
-.wrap .header_container .mainNavi > ul li .depth_wrap ul.depth li a span {
+.wrap header .white_cover .header_container .mainNavi > ul li .depth_wrap ul.depth li a span {
   height: 16px;
   font-size: 14px;
 }
-.wrap .header_container .mainNavi > ul li .depth_wrap:before {
+.wrap header .white_cover .header_container .mainNavi > ul li .depth_wrap:before {
   content: "";
   width: 1px;
   height: 180px;
   background: #9C9C9C;
   position: absolute;
-  left: 0;
-  top: 0;
+  top: 80px;
   display: block;
 }
-.wrap .header_container .mainNavi > ul .hover_letter:hover .bt_line {
+.wrap header .white_cover .header_container .mainNavi > ul .hover_letter:hover .bt_line {
   width: 100%;
   bottom: 0;
   left: 0;
 }
-.wrap .header_container .mainNavi > ul .hover_letter:hover span {
+.wrap header .white_cover .header_container .mainNavi > ul .hover_letter:hover span {
   color: #009599;
 }
-.wrap .header_container .mainNavi > ul .depth:hover span {
+.wrap header .white_cover .header_container .mainNavi > ul .depth:hover span {
   color: #009599;
 }
-.wrap .header_container .right_gnb {
+.wrap header .white_cover .header_container .right_gnb {
   height: 35px;
   float: right;
   display: block;
 }
-.wrap .header_container .right_gnb .home_back {
+.wrap header .white_cover .header_container .right_gnb .home_back {
   width: 40px;
   height: 35px;
   background-color: #222;
@@ -153,7 +145,7 @@ header {
   top: 22px;
   right: 105px;
 }
-.wrap .header_container .right_gnb .home_back .home_icon {
+.wrap header .white_cover .header_container .right_gnb .home_back .home_icon {
   width: 40px;
   height: 35px;
   position: absolute;
@@ -162,11 +154,11 @@ header {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.wrap .header_container .right_gnb .home_back .home_icon span {
+.wrap header .white_cover .header_container .right_gnb .home_back .home_icon span {
   text-indent: -9999px;
   font-size: 0;
 }
-.wrap .header_container .right_gnb .gnb_lang {
+.wrap header .white_cover .header_container .right_gnb .gnb_lang {
   width: 45px;
   height: 35px;
   position: absolute;
@@ -174,19 +166,19 @@ header {
   top: 22px;
   background-color: #086c6d;
 }
-.wrap .header_container .right_gnb .gnb_lang a {
+.wrap header .white_cover .header_container .right_gnb .gnb_lang a {
   transition: 0.5s ease;
   text-align: center;
   display: block;
   letter-spacing: 0.05em;
 }
-.wrap .header_container .right_gnb .gnb_lang a span {
+.wrap header .white_cover .header_container .right_gnb .gnb_lang a span {
   line-height: 35px;
   color: #FFF;
   font-size: 12px;
   font-weight: 600;
 }
-.wrap .header_container .right_gnb .gnb_btall {
+.wrap header .white_cover .header_container .right_gnb .gnb_btall {
   width: 40px;
   height: 35px;
   position: absolute;
@@ -199,7 +191,7 @@ header {
   background-color: none;
   transition: all 0.3s ease;
 }
-.wrap .header_container .right_gnb .gnb_btall .gnb_sline01 {
+.wrap header .white_cover .header_container .right_gnb .gnb_btall .gnb_sline01 {
   position: absolute;
   top: 9px;
   right: 10px;
@@ -207,7 +199,7 @@ header {
   height: 2px;
   background: #FFF;
 }
-.wrap .header_container .right_gnb .gnb_btall .gnb_sline02 {
+.wrap header .white_cover .header_container .right_gnb .gnb_btall .gnb_sline02 {
   position: absolute;
   top: 17px;
   right: 10px;
@@ -215,7 +207,7 @@ header {
   height: 2px;
   background: #FFF;
 }
-.wrap .header_container .right_gnb .gnb_btall .gnb_sline03 {
+.wrap header .white_cover .header_container .right_gnb .gnb_btall .gnb_sline03 {
   position: absolute;
   top: 25px;
   right: 10px;
@@ -223,13 +215,13 @@ header {
   height: 2px;
   background: #FFF;
 }
-.wrap .main_video_span {
+.wrap section .main_video_span {
   display: block;
   position: relative;
   overflow: hidden;
   height: 825px;
 }
-.wrap .mn_slogan {
+.wrap section .mn_slogan {
   position: absolute;
   z-index: 1000;
   top: 50%;
@@ -237,21 +229,21 @@ header {
   width: 100%;
   text-align: center;
 }
-.wrap .mn_grid {
+.wrap section .mn_grid {
   font-size: 0;
 }
-.wrap .mn_grid li.grid_hover_li {
+.wrap section .mn_grid li.grid_hover_li {
   width: 33.33333%;
   display: inline-block;
   position: relative;
   transition: 1s;
   overflow: hidden;
 }
-.wrap .mn_grid li.grid_hover_li img {
+.wrap section .mn_grid li.grid_hover_li img {
   transition: 1s ease;
   width: 100%;
 }
-.wrap .mn_grid li.grid_hover_li .grid_letter_wrap {
+.wrap section .mn_grid li.grid_hover_li .grid_letter_wrap {
   position: absolute;
   top: 50%;
   left: 0;
@@ -260,7 +252,7 @@ header {
   line-height: 22px;
   z-index: 1000;
 }
-.wrap .mn_grid li.grid_hover_li .grid_letter_wrap .grid_letter_inner {
+.wrap section .mn_grid li.grid_hover_li .grid_letter_wrap .grid_letter_inner {
   width: 160px;
   display: inline-block;
   padding: 15px 0;
@@ -271,13 +263,13 @@ header {
   font-weight: 600;
   text-align: center;
 }
-.wrap .mn_map {
+.wrap section .mn_map {
   width: 100%;
   height: 900px;
   background-image: url(../image/map_bg.png);
   position: relative;
 }
-.wrap .mn_map h3 {
+.wrap section .mn_map h3 {
   padding-top: 100px;
   font-size: 42px;
   font-weight: 600;
@@ -286,12 +278,12 @@ header {
   text-align: center;
   letter-spacing: 0.05em;
 }
-.wrap .mn_map .map_global,
-.wrap .mn_map .map_icons1,
-.wrap .mn_map .map_icons2,
-.wrap .mn_map .map_icons3,
-.wrap .mn_map .map_icons4,
-.wrap .mn_map .map_icons5 {
+.wrap section .mn_map .map_global,
+.wrap section .mn_map .map_icons1,
+.wrap section .mn_map .map_icons2,
+.wrap section .mn_map .map_icons3,
+.wrap section .mn_map .map_icons4,
+.wrap section .mn_map .map_icons5 {
   width: 1332px;
   height: 574px;
   top: 236px;
@@ -299,7 +291,7 @@ header {
   margin-left: -666px;
   position: absolute;
 }
-.wrap .mn_map .map_letter1 {
+.wrap section .mn_map .map_letter1 {
   font-family: Calibri;
   position: absolute;
   left: 676px;
@@ -309,11 +301,11 @@ header {
   text-transform: uppercase;
   font-size: 15px;
 }
-.wrap .mn_map .map_letter1 strong {
+.wrap section .mn_map .map_letter1 strong {
   font-weight: 300;
   display: block;
 }
-.wrap .mn_map .map_letter1 .map_line01 {
+.wrap section .mn_map .map_letter1 .map_line01 {
   display: block;
   position: absolute;
   width: 1px;
@@ -322,7 +314,7 @@ header {
   top: -6px;
   background: rgba(255, 255, 255, 0.4);
 }
-.wrap .mn_map .map_letter1 .map_line02 {
+.wrap section .mn_map .map_letter1 .map_line02 {
   display: block;
   position: absolute;
   width: 50px;
@@ -331,7 +323,7 @@ header {
   top: 20px;
   background: rgba(255, 255, 255, 0.4);
 }
-.wrap .mn_map .map_letter2 {
+.wrap section .mn_map .map_letter2 {
   font-family: Calibri;
   position: absolute;
   left: 408px;
@@ -341,7 +333,7 @@ header {
   font-size: 15px;
   display: block;
 }
-.wrap .mn_map .map_letter2 .map_line01 {
+.wrap section .mn_map .map_letter2 .map_line01 {
   display: block;
   position: absolute;
   width: 1px;
@@ -350,7 +342,7 @@ header {
   top: 22px;
   background: rgba(255, 255, 255, 0.4);
 }
-.wrap .mn_map .map_letter2 .map_line02 {
+.wrap section .mn_map .map_letter2 .map_line02 {
   display: block;
   position: absolute;
   width: 60px;
@@ -359,7 +351,7 @@ header {
   top: 57px;
   background: rgba(255, 255, 255, 0.4);
 }
-.wrap .mn_map .map_letter3 {
+.wrap section .mn_map .map_letter3 {
   font-family: 'Calibri';
   font-size: 15px;
   color: #fff;
@@ -370,10 +362,10 @@ header {
   left: 676px;
   top: 270px;
 }
-.wrap .mn_map .map_letter3 span:first-child {
+.wrap section .mn_map .map_letter3 span:first-child {
   display: block;
 }
-.wrap .mn_map .map_letter3 .map_line01 {
+.wrap section .mn_map .map_letter3 .map_line01 {
   display: block;
   position: absolute;
   width: 98px;
@@ -382,7 +374,7 @@ header {
   top: 13px;
   background: rgba(255, 255, 255, 0.4);
 }
-.wrap .mn_map .map_letter3 .map_line02 {
+.wrap section .mn_map .map_letter3 .map_line02 {
   display: block;
   position: absolute;
   width: 1px;
@@ -391,7 +383,7 @@ header {
   top: 14px;
   background: rgba(255, 255, 255, 0.4);
 }
-.wrap .mn_map .map_letter3 .map_line03 {
+.wrap section .mn_map .map_letter3 .map_line03 {
   display: block;
   position: absolute;
   width: 17px;
@@ -400,7 +392,7 @@ header {
   top: 35px;
   background: rgba(255, 255, 255, 0.4);
 }
-.wrap .mn_map .map_letter4 {
+.wrap section .mn_map .map_letter4 {
   font-family: 'Calibri';
   font-size: 15px;
   color: #fff;
@@ -411,7 +403,7 @@ header {
   left: 372px;
   top: 389px;
 }
-.wrap .mn_map .map_letter4 .map_line01 {
+.wrap section .mn_map .map_letter4 .map_line01 {
   display: block;
   position: absolute;
   width: 47px;
@@ -420,7 +412,7 @@ header {
   top: 13px;
   background: rgba(255, 255, 255, 0.4);
 }
-.wrap .mn_map .map_letter4 .map_line02 {
+.wrap section .mn_map .map_letter4 .map_line02 {
   display: block;
   position: absolute;
   width: 1px;
@@ -429,7 +421,7 @@ header {
   top: -24px;
   background: rgba(255, 255, 255, 0.4);
 }
-.wrap .mn_map .map_letter5 {
+.wrap section .mn_map .map_letter5 {
   font-family: 'Calibri';
   font-size: 15px;
   color: #fff;
@@ -440,16 +432,16 @@ header {
   left: 1050px;
   top: 235px;
 }
-.wrap .mn_map .map_letter5 strong {
+.wrap section .mn_map .map_letter5 strong {
   font-weight: 300;
   display: block;
   color: #ec7a00;
   font-size: 17px;
 }
-.wrap .mn_map .map_letter5 span {
+.wrap section .mn_map .map_letter5 span {
   color: #ec7a00;
 }
-.wrap .mn_map .map_letter5 .map_line01 {
+.wrap section .mn_map .map_letter5 .map_line01 {
   display: block;
   position: absolute;
   width: 1px;
@@ -458,7 +450,7 @@ header {
   top: -74px;
   background: rgba(236, 122, 0, 0.4);
 }
-.wrap .mn_map .map_letter5 .map_line02 {
+.wrap section .mn_map .map_letter5 .map_line02 {
   display: block;
   position: absolute;
   width: 166px;
@@ -467,19 +459,19 @@ header {
   top: 22px;
   background: rgba(236, 122, 0, 0.4);
 }
-.wrap .mn_two_grid ul {
+.wrap section .mn_two_grid ul {
   font-size: 0;
 }
-.wrap .mn_two_grid ul li {
+.wrap section .mn_two_grid ul li {
   overflow: hidden;
   display: inline-block;
   width: 50%;
   position: relative;
 }
-.wrap .mn_two_grid ul li .mn_social_img img {
+.wrap section .mn_two_grid ul li .mn_social_img img {
   width: 100%;
 }
-.wrap .mn_two_grid ul li .mn_span1 {
+.wrap section .mn_two_grid ul li .mn_span1 {
   position: absolute;
   top: 45%;
   left: 0;
@@ -492,7 +484,7 @@ header {
   color: #FFF;
   z-index: 500;
 }
-.wrap .mn_two_grid ul li .mn_span2 {
+.wrap section .mn_two_grid ul li .mn_span2 {
   position: absolute;
   top: 60%;
   left: 0;
@@ -504,14 +496,14 @@ header {
   color: #FFF;
   z-index: 500;
 }
-.wrap .frontier {
+.wrap section .frontier {
   width: 100%;
   position: relative;
 }
-.wrap .frontier .frontier_img img {
+.wrap section .frontier .frontier_img img {
   width: 100%;
 }
-.wrap .frontier_ad {
+.wrap section .frontier_ad {
   display: block;
   position: absolute;
   top: 99px;
@@ -519,7 +511,7 @@ header {
   width: 321px;
   height: 170px;
 }
-.wrap .frontier_ad img {
+.wrap section .frontier_ad img {
   width: 100%;
 }
 .wrap footer {

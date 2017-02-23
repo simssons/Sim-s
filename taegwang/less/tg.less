@@ -22,217 +22,218 @@ header{height: 80px; }
 	left:-9999px;
 }
 
-
-
 // lay-out
 
 .wrap{
-	.header_container{
-		background-color: #000;
-		width: 100%;
-		height: 80px;
-		margin:0 auto;
-		position: fixed;
-		z-index: 10000;
-		.hidden_mnbar{
-			display: block;
-			position: absolute;
-			top:80px;
+	header{
+	.white_cover{
+		height: 100%;
+		background: #FFF;
+		position:relative;
+		z-index: 1;
+		.header_container{
+			background-color: #000;
 			width: 100%;
-			background-color: #FF0;
-			height: 180px;
-			border-bottom: 1px @color-font solid;
-			visibility:hidden;
-		}
-		.logo{
-			position: absolute;
-			width: 63px; height: 43px;
-			top:18px;
-			left:30px;
-			vertical-align: middle;
-		}
-		h1{
-			font-size: 0;
-			line-height: 0;
-			overflow: hidden;
-
-		}
-		.mainNavi{
-			>ul{
+			height: 80px;
+			margin:0 auto;
+			position: fixed;
+			z-index: 10000;
+			// .hidden_mnbar{
+			// 	display: block;
+			// 	position: absolute;
+			// 	top:80px;
+			// 	width: 100%;
+			// 	background-color: #FF0;
+			// 	height: 180px;
+			// 	border-bottom: 1px @color-font solid;
+			// }
+			.logo{
+				position: absolute;
+				width: 63px; height: 43px;
+				top:18px;
+				left:30px;
+				vertical-align: middle;
+			}
+			h1{
 				font-size: 0;
-				width: 1200px;
-				height: 80px;
-				text-align: center;
-				position: relative;
-				margin:0 auto;
+				line-height: 0;
+				overflow: hidden;
 
-				li{
-					width: 220px;
-					display:inline-block;
+			}
+			.mainNavi{
+				>ul{
+					font-size: 0;
+					width: 1200px;
+					height: 80px;
+					text-align: center;
+					position: relative;
+					margin:0 auto;
 
-					a{
-						letter-spacing: 0.05em;
-						line-height: 80px;
-						color:#FFF;
-						font-size:16px;
-						padding:0 15px;
-						display:block;
-						text-align:center;
-						white-space: nowrap;
-						font-weight: bold;
-						position:relative;
+					li{
+						width: 220px;
+						// display:inline-block;
+						float: left;
 
-						// span{
-						// 	transition: 0.25s linear;
-						// }
+						a{
+							letter-spacing: 0.05em;
+							line-height: 80px;
+							color:#FFF;
+							font-size:16px;
+							padding:0 15px;
+							display:block;
+							text-align:center;
+							white-space: nowrap;
+							font-weight: bold;
+							position:relative;
 
-						span.bt_line{
-							height: 3px;
-							width: 0;
-							position:absolute;
-				            background-color:@color-tgmain;
-				            bottom:0;
-				            left:-30px;
-				            transition: 0.25s linear;
+							// span{
+							// 	transition: 0.25s linear;
+							// }
+
+							span.bt_line{
+								height: 3px;
+								width: 0;
+								position:absolute;
+					            background-color:@color-tgmain;
+					            bottom:0;
+					            left:-30px;
+					            transition: 0.25s linear;
+							}
 						}
-					}
-				.depth_wrap{
-							width: 220px;
-							padding:25px 0 ;
-							position: absolute;
-							top:80px;
-							visibility: hidden;
+					.depth_wrap{
+								width: 220px;
+								padding:25px 0 ;
+								// position: absolute;
+								// top:80px;
+								// visibility: hidden;
 
 
 
-								ul.depth{
-								position:relative;
-								li{
-									height: 29px ;
-									margin:5px 0;
-									float:none;
-									display: block;
-									a{
-										line-height: 29px;
-										color:#9C9C9C;
-										span{
-											height: 16px;
-											font-size: 14px
+									ul.depth{
+									position:relative;
+									li{
+										height: 29px ;
+										margin:5px 0;
+										float:none;
+										display: block;
+										a{
+											line-height: 29px;
+											color:#9C9C9C;
+											span{
+												height: 16px;
+												font-size: 14px
+											}
 										}
 									}
-								}
-							}// ul.depth
+								}// ul.depth
 
-						&:before{
-							content: "";
-							width: 1px;
-							height: 180px;
-							background: #9C9C9C;
-							position: absolute;
-							left: 0;
-							top: 0;
-							display: block;
-						}
+							&:before{
+								content: "";
+								width: 1px;
+								height: 180px;
+								background: #9C9C9C;
+								position: absolute;
+								// left: 0;
+								top: 80px;
+								display: block;
+							}
+					}
+
+					}
+				.hover_letter:hover .bt_line{
+					width:100%;
+					bottom:0;
+					left:0;
+				}
+				.hover_letter:hover span{
+					color:@color-tgmain;
 				}
 
+				.depth:hover span{
+					color:@color-tgmain;
 				}
-			.hover_letter:hover .bt_line{
-				width:100%;
-				bottom:0;
-				left:0;
-			}
-			.hover_letter:hover span{
-				color:@color-tgmain;
-			}
 
-			.depth:hover span{
-				color:@color-tgmain;
-			}
-
-			}		// ul
+				}		// ul
 
 
 
-		}// mainNavi
+			}// mainNavi
 
-			.right_gnb{
-				height: 35px;
-				float:right;
-				display: block;
-
-				.home_back{
-					width: 40px;
+				.right_gnb{
 					height: 35px;
-					background-color: #222;
+					float:right;
 					display: block;
-					position: absolute;
-					top:22px;
-					right: 105px;
 
-
-					  .home_icon{
+					.home_back{
 						width: 40px;
 						height: 35px;
-						position: absolute;
-						transition: 0.5s ease;
-						background-image: url(http://www.tkgroup.co.kr/kor/_Img/Layout/home-ico.png);
-						background-repeat: no-repeat;
-						background-position: center center;
-							span{text-indent: -9999px; font-size: 0;}
-					}
-				}
-
-				.gnb_lang{
-					width: 45px;
-					height: 35px;
-					position: absolute;
-					right:60px;
-					top:22px;
-					background-color: #086c6d;
-					a{
-						transition: 0.5s ease;
-						text-align: center;
+						background-color: #222;
 						display: block;
-						letter-spacing: 0.05em;
-						span{
-							line-height: 35px;
-							color: #FFF;
-							font-size: 12px;
-							font-weight: 600;
+						position: absolute;
+						top:22px;
+						right: 105px;
+
+
+						  .home_icon{
+							width: 40px;
+							height: 35px;
+							position: absolute;
+							transition: 0.5s ease;
+							background-image: url(http://www.tkgroup.co.kr/kor/_Img/Layout/home-ico.png);
+							background-repeat: no-repeat;
+							background-position: center center;
+								span{text-indent: -9999px; font-size: 0;}
 						}
 					}
 
-				}
+					.gnb_lang{
+						width: 45px;
+						height: 35px;
+						position: absolute;
+						right:60px;
+						top:22px;
+						background-color: #086c6d;
+						a{
+							transition: 0.5s ease;
+							text-align: center;
+							display: block;
+							letter-spacing: 0.05em;
+							span{
+								line-height: 35px;
+								color: #FFF;
+								font-size: 12px;
+								font-weight: 600;
+							}
+						}
 
-				.gnb_btall{
-					 width: 40px;
-					 height: 35px;
-					 position: absolute;
-					 top: 22px;
-					 right:  10px;
-					 transition:all .3s ease;
-					 z-index:2300;
-					 display: block;
-					 overflow: hidden;
-					 background-color: none;
-					 transition:all 0.3s ease;
+					}
 
-					.gnb_sline01{ position: absolute; top:9px; right:10px; width: 22px; height: 2px; background: #FFF; }
-					.gnb_sline02{ position: absolute; top:17px;	right:10px; width: 16px; height: 2px; background: #FFF; }
-					.gnb_sline03{ position: absolute; top:25px;	right:10px;	width: 22px; height: 2px; background: #FFF;	}
+					.gnb_btall{
+						 width: 40px;
+						 height: 35px;
+						 position: absolute;
+						 top: 22px;
+						 right:  10px;
+						 transition:all .3s ease;
+						 z-index:2300;
+						 display: block;
+						 overflow: hidden;
+						 background-color: none;
+						 transition:all 0.3s ease;
 
-				}
+						.gnb_sline01{ position: absolute; top:9px; right:10px; width: 22px; height: 2px; background: #FFF; }
+						.gnb_sline02{ position: absolute; top:17px;	right:10px; width: 16px; height: 2px; background: #FFF; }
+						.gnb_sline03{ position: absolute; top:25px;	right:10px;	width: 22px; height: 2px; background: #FFF;	}
 
-			}// right_gnb
+					}
 
+				}// right_gnb
 
-
-
-	}// header;
-
-
+		}// header_container;
+	}
+}
 	// section
-
+section{
 	.main_video_span{
 		display: block;
 		position: relative;
@@ -566,7 +567,7 @@ header{height: 80px; }
 			width: 100%;
 		}
 	}
-// end of section
+	}//section
 
 
 //footer
