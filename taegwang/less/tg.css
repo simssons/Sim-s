@@ -30,6 +30,12 @@ header {
   top: -9999px;
   left: -9999px;
 }
+.wrap header {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+}
 .wrap header .white_cover {
   background: #FFF;
   overflow: hidden;
@@ -105,6 +111,7 @@ header {
   color: #9C9C9C;
 }
 .wrap header .white_cover .header_container .mainNavi li .depth_wrap ul.depth li a span {
+  letter-spacing: -0.02em;
   height: 16px;
   font-size: 14px;
 }
@@ -125,8 +132,25 @@ header {
 .wrap header .white_cover .header_container .mainNavi .hover_letter:hover span {
   color: #009599;
 }
-.wrap header .white_cover .header_container .mainNavi .depth:hover span {
+.wrap header .white_cover .header_container .mainNavi .depth li:hover span {
   color: #009599;
+}
+.wrap header .white_cover .header_container .mainNavi .depth li a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: #009599;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+}
+.wrap header .white_cover .header_container .mainNavi .depth li:hover .list_unders:before {
+  width: 220px;
+  transition: 0.5s ease;
+  margin-left: 0;
+  left: 0;
+  right: 0;
 }
 .wrap header .white_cover .header_container .right_gnb {
   height: 35px;

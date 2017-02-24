@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style>
+	/*reset*/
+	h1,h2,h3,h4,h5,ul,ul,ol{margin:0; padding:0;}
+	img{vertical-align: top;}
+	a{color:#000; text-decoration: none;}
+	li{list-style: none;}
+
+	/*option*/
+	.ir{text-indent: -9999px; font-size: 0; position: absolute; top:-9999px; left:-9999px; }
+	.fr{float:right;}
+	.fl{float:left;}
+	.red{color:#F00;}
+	.blue{color:#00F}
+	.border_gray{border:1px #CCC solid; display:block;}
+	.go_icon{   display: inline-block;
+			    width: 3px;
+			    height: 6px;
+			    margin: -2px 0 0 4px;
+			    vertical-align: middle;
+			    background: url(http://static.naver.net/newsstand/img/20140716/sp_nwstd.png) no-repeat -510px -300px;
+			}
+
+	/*layout*/
+
+	body{background: url(http://static.naver.net/newsstand/img/20121231/bg_panel.png) 50% 0 no-repeat;}
+	.wrap{  width: 900px; height: 540px; margin: 0 auto; position: relative;}
+	header{   width: 840px; margin:0 auto; padding:20px 0 33px; border-bottom: 3px #333 solid;}
+	h1{ float:left;}
+	.banner{  display: block; float: right;}
+	.header_btg{ clear: right;}
+	.header_btg input{ margin-left:2px;}
+	.header_btg input[value=소셜보내기]{margin-left: 5px;}
+	section{  width: 840px; height: 380px; margin: 0 auto;}
+	.left_contents{ width: 520px;}
+	.ltc_top{border-bottom:  2px #e8e8e8 solid; padding-bottom: 6px;}
+	.ltc_top h2{margin-bottom:6px;}
+	.ltc_top span.ltc_img{ display: block; float: left; outline: 1px #CCC solid; margin: 0 10px 6px 0; }
+	.ltc_top .ltc_img img{width: 148px; height: 100px;}
+	.ltc_ul_wrap{}
+	.ltc_ul_wrap h3{font-family: '돋움', Dotum; font-size: 12px; line-height: 16px; color: #c51917; font-weight: bold; }
+	.ltc_ul_wrap h3:after{
+		content: '';
+		background: url(http://static.naver.net/newsstand/2017/0224/chosun/112252/008.png) no-repeat 0px 0px;
+		display: inline-block;
+		width: 5px;
+		height: 3px;
+		vertical-align: middle;
+		margin-left: 5px;
+	}
+	.ltc_ul_wrap {margin-left: 160px; }
+	.ltc_ul_wrap ul{margin-bottom: 5px; }
+	.ltc_ul_wrap ul li{
+		padding-left: 8px; margin-bottom: 7px; line-height: 13px; width: 336px;
+		background: url(http://static.naver.net/newsstand/2017/0224/chosun/114945/008.png) no-repeat 0px -43px;
+	}
+	.ltc_ul_wrap ul li a{color:#333; font-size: 12px;}
+	.ltc_bottom ul{float: left;}
+	.ltc_bottom ul li{height: 26px;}
+	.ltc_bottom ul li a{color:#000; font-weight: bold; font-size: 14px; }
+	.ltc_bottom_imgwrap{border:1px #888 solid; display: block; float:right;}
+
+	.right_contents{ width: 300px; margin-left: 540px; }
+	.rt_top{ border-bottom:1px #888 solid; }
+	.rt_top_thumb img{float:left; margin-right: 6px; }
+	.rt_top_thumb div{ height: 60px; margin-bottom: 10px; }
+	.rt_top_thumb span{font-size: 14px; font-weight: bold; display: block; margin-bottom: 6px; }
+	.rt_top_thumb div a + span{font-size: 12px; color:#888; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+	.rt_top_li ul li {
+		padding-left: 9px; margin-bottom: 11px;
+		background: url(http://static.naver.net/newsstand/2017/0224/chosun/152549/007.png) no-repeat 4px -38px;
+	}
+	.rt_top_li ul li a{ display:block; height: 13px; font-weight: bold; color:#00F; font-size: 13px; }
+
+	.rt_bottom{ margin-top:8px;}
+ 	.rt_bottom_li {margin-bottom: 10px;  }
+	.rt_bottom_li ul li {
+		padding-left: 9px; margin-bottom: 11px;
+		background: url(http://static.naver.net/newsstand/2017/0224/chosun/152549/007.png) no-repeat 4px -38px;
+
+	}
+	.rt_bottom_li ul li a{ display:block; height: 13px; font-weight: bold; color:#333; font-size: 13px; }
+	.rt_bottom_pics ul{text-align: center; margin: 20px 0 3px 0; }
+	.rt_bottom_pics ul li{ display: inline-block; position: relative;}
+
+	.rt_bottom_pics .rt_bottom_cover{width: 143px; position: absolute; background-color: rgba(0,0,0,.5); bottom: 0; height: 22px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+	.rt_bottom_pics .rt_bottom_cover span{display: inline-block;  vertical-align: top;}
+	.rt_bottom_pics .rt_bottom_cover a{font-size: 11px; color:white; line-height: 22px;}
+
+	.rb_go_chosun{position: absolute; bottom: 21; right:29px; font-size: 11px; }
+
+
+
+	</style>
+	<body>
+		<div class="wrap">
+			<header>
+				<h1>
+					<span class="ir">조선일보</span>
+					<a href=""><img src="http://static.naver.net/newsstand/up/2013/0813/nsd113710494.gif" width="260" height="55" alt="조선일보"></a>
+				</h1>
+				<span class="banner">
+					<a href=""><img src="http://adcreative.naver.com/ad3/1004/1004874/468_60_01487035935080.jpg" width="468" height="60" title="" alt="광고 영역 입니다." border="0"></a>
+				</span>
+				<div class="header_btg">
+					<a href=""><input type="button" name="" value="구독하기" class="fl"></a>
+					<a href=""><input type="button" name="" value="이용자한마디" class="fl"></a>
+					<a href=""><input type="button" name="" value="소셜보내기" class="fl"></a>
+				</div>
+			</header>
+			<section>
+					<div class="left_contents fl">
+						<div class="ltc_top">
+							<h2>
+								<a href="" target="_blank"><span class="red">[속보]</span> "김정남 시신서 신경작용제 VX 검출"</a>
+							</h2>
+							<a href="">
+								<span class="ltc_img">
+								<img src="http://static.naver.net/newsstand/2017/0224/chosun/112252/001.jpg" alt="">
+								</span>
+							</a>
+							<div class="ltc_ul_wrap">
+								<h3>오늘의주요기사</h3>
+								<ul>
+									<li><a href="">한국 남친 여러명 둔 'LOL 여성', 김정남 암살 이틀 전에…</a></li>
+									<li><a href="">말레이 경찰, 김정남 피살 연루 30대 자국민 체포</a></li>
+									<li><a href="">김정남 오른쪽 팔목에 염주야? 팔찌야?</a></li>
+									<li><a href="">전경련 회장에 허창수 GS 회장… 6년간 3차례 연임</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="ltc_bottom">
+							<ul>
+								<li><a href="">여교사 '몰카' 초등교사, 임용시험 재합격</a></li>
+								<li><a href="">70년 전 발명된 'VX', 北은 어떻게 구했나?</a></li>
+								<li><a href="" style="color:#00F;">北 최룡해, 3주 동안 몸 숨겼던 속사정 있었다</a></li>
+								<li><a href="">박수 받는 말레이 경찰청장의 품격이 부러운 이유</a></li>
+								<li><a href="">대선후보 심상정, "김정은 어떻게 다루느냐" 질문에</a></li>
+								<li><a href="" style="color:#00F;">황교안, '대통령 권한대행 기념시계' 제작·배포</a></li>
+								<li><a href="" style="color:#333;">박원순 시장 축사 중에 중년 남성이 흉기로 자해 시도 </a></li>
+								<li><a href="">중국 꺾는 데 18년 걸렸다, 그녀들의 북받친 애국가</a></li>
+							</ul>
+						</div>
+						<a href="">
+							<span class="ltc_bottom_imgwrap">
+								<img src="http://static.naver.net/newsstand/2017/0224/chosun/140447/002.jpg" alt="사람도 위험한 '가축전염병'">
+							</span>
+						</a>
+
+
+
+
+					</div>
+
+					<div class="right_contents">
+						<div class="rt_top">
+								<div class="rt_top_thumb">
+									<a href=""><span><img src="http://static.naver.net/newsstand/2017/0224/chosun/161654/003.jpg" alt="썸네일:한화, 빅리그 476경기 뛴 카를로스 비야누에바 영입"></span></a>
+									<div>
+										<a href=""><span>김인식 감독 "현재 선수 몸상태 80%"</span></a>
+										<span>WBC(월드베이스볼클래식)에 출전하는 한국 야구 국가대표팀이 일본 오키나와 전지훈..</span>
+									</div>
+								</div>
+								<div class="rt_top_thumb">
+									<a href=""><span><img src="http://image.chosun.com/sitedata/www/section_image/FJ/20170224103354077_1.jpg" alt="썸네일:김슬기, 강하늘에 호감? " 시집갈="" 거에요,="" 사랑해요""=""></span></a>
+									<div>
+										<a href=""><span>김슬기, 강하늘에 호감? "시집갈 거에요, 사랑해요"</span></a>
+										<span>배우 김슬기와 강하늘이 핑크빛 분위기를 자아내 관심이 쏠리고 있다. 지난 23일 방송된..</span>
+									</div>
+								</div>
+							<div class="rt_top_li">
+								<ul>
+									<li><a href="">이글… 더블보기… 박인비, 복귀전 롤러코스터</a></li>
+									<li><a href="">허지웅 "유승준 입국 금지, 국가가 개인 억압"</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="rt_bottom">
+							<div class="rt_bottom_li">
+								<ul>
+									<li><a href="">시인이 미성년 제자 10명 성폭행·성추행</a></li>
+									<li><a href="">5월 초 임시공휴일 지정 머뭇거리는 정부, 왜?</a></li>
+									<li><a href="">'월급 의사'들이 과잉 진료하는 이유가 있었네</a></li>
+								</ul>
+							</div>
+							<div class="rt_bottom_pics">
+								<ul>
+									<li>
+										<a href="">
+										<span class="border_gray"><img src="http://static.naver.net/newsstand/2017/0224/chosun/154051/003.jpg" alt="썸네일:충격! 가족 중 'X맨' 대공개"></span>
+										</a>
+										<div class="rt_bottom_cover">
+											<a href="">
+												<span>충격! 가족 중 'X맨' 대공개</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<a href="">
+										<span class="border_gray"><img src="http://static.naver.net/newsstand/2017/0224/chosun/154051/004.jpg" alt="썸네일:장관에 말문이 턱! '뿌리 사다리'"></span>
+										</a>
+										<div class="rt_bottom_cover">
+											<a href="">
+												<span>장관에 말문이 턱! '뿌리 사다리'</span>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+			</section>
+			<a href="" class="rb_go_chosun">
+				<strong style="color:#4a7ce4; margin-right:1px;">조선일보</strong>사이트 바로가기
+				<span class="go_icon"></span>
+			</a>
+
+		</div> <!-- wrap -->
+
+	</body>
+</html>

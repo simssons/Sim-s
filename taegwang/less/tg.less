@@ -26,6 +26,10 @@ header{height: 80px; }
 
 .wrap{
 	header{
+		height: 80px;
+		width: 100%;
+		position: fixed;
+		z-index: 9999;
 	.white_cover{
 		background: #FFF;
 		overflow: hidden;
@@ -113,9 +117,11 @@ header{height: 80px; }
 											line-height: 29px;
 											color:#9C9C9C;
 											span{
+												letter-spacing: -0.02em;
 												height: 16px;
-												font-size: 14px
+												font-size: 14px;
 											}
+
 										}
 									}
 								}// ul.depth
@@ -142,9 +148,28 @@ header{height: 80px; }
 					color:@color-tgmain;
 				}
 
-				.depth:hover span{
+				.depth li:hover span{
 					color:@color-tgmain;
 				}
+				.depth li a:before{
+					content: "";
+					position: absolute;
+					width: 0;
+					height: 1px;
+					background-color: @color-tgmain;
+					bottom:0;
+					left:50%;
+					right:50%;
+				}
+
+				.depth li:hover .list_unders:before{
+					width: 220px;
+					transition: 0.5s ease;
+					margin-left: 0;
+					left:0;
+					right:0;
+				}
+
 			}// mainNavi
 
 				.right_gnb{
@@ -319,6 +344,8 @@ section{
 			margin-left: -666px;
 			position: absolute;
 		}
+
+
 		.map_letter1{
 			font-family: Calibri;
 			position: absolute;
