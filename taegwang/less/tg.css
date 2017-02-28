@@ -238,7 +238,9 @@ header {
   display: block;
   position: relative;
   overflow: hidden;
-  height: 825px;
+}
+.wrap section .main_video_span video {
+  display: block;
 }
 .wrap section .mn_slogan {
   position: absolute;
@@ -539,6 +541,7 @@ header {
 .wrap footer .footer_top_wrap {
   width: 100%;
   background-color: #191919;
+  position: relative;
 }
 .wrap footer .footer_top_wrap .footer_ul_wrap {
   width: 1200px;
@@ -594,6 +597,24 @@ header {
   background-image: url(../image/ftoplink_ico02.png);
   left: 200px;
   top: 21px;
+}
+.wrap footer .footer_top_wrap .top_btn_going_up {
+  text-align: center;
+  position: fixed;
+  right: 0;
+  bottom: 359px;
+  text-transform: uppercase;
+  width: 60px;
+  height: 60px;
+  display: block;
+  background-color: #000;
+}
+.wrap footer .footer_top_wrap .top_btn_going_up span {
+  display: block;
+  padding-top: 30px;
+  color: #FFF;
+  font-size: 12px;
+  background: url(../image/top-btn.png) no-repeat center 20px;
 }
 .wrap footer .footer_c_info {
   width: 100%;
@@ -799,4 +820,232 @@ li.grid_hover_li:hover .grid_letter_inner:before {
     transition: width 2s;
     width: 16px;
   }
+}
+@media screen and (max-width: 1000px) {
+  html {
+    overflow-x: hidden;
+  }
+  .wrap header {
+    position: static;
+  }
+  .wrap header .white_cover {
+    overflow: visible;
+  }
+  .wrap header .white_cover .header_container .mainNavi {
+    position: fixed;
+    right: -223px;
+    height: 100%;
+    width: 223px;
+    background-color: #FFF;
+    transition: 1s;
+  }
+  .wrap header .white_cover .header_container .mainNavi > ul > li {
+    background-color: #FFF;
+  }
+  .wrap header .white_cover .header_container .mainNavi > ul li a {
+    padding: 0 20px;
+    color: #000;
+    line-height: 68px;
+    text-align: left;
+  }
+  .wrap header .white_cover .header_container .mainNavi .li_group div.depth_wrap {
+    padding: 0;
+  }
+  .wrap header .white_cover .header_container .mainNavi > ul > li:hover .depth_wrap {
+    display: block;
+  }
+  .wrap header .white_cover .header_container .mainNavi ul li li a {
+    background-color: #EEE;
+    border-top: 1px #CCC solid;
+  }
+  .wrap header .white_cover .header_container .mainNavi li a span.bt_line {
+    display: none;
+  }
+  .wrap header .white_cover .header_container .mainNavi .depth li a:before {
+    display: none;
+  }
+  .wrap header .white_cover .header_container .mainNavi .hover_letter:hover span {
+    color: #000;
+  }
+  .wrap header .white_cover .header_container .mainNavi .depth li:hover span {
+    color: #9C9C9C;
+  }
+  .wrap header .white_cover .header_container .mainNavi li .depth_wrap ul.depth li {
+    margin: 0;
+  }
+}
+section.sub1 > div {
+  position: relative;
+}
+section.sub1 > div .sub1_mg {
+  margin: 0 auto;
+}
+section.sub1 > div .sub1_mg img {
+  width: 100%;
+}
+section.sub1 div.sub_menu {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  border-top: 1px #CCC solid;
+}
+section.sub1 div.sub_menu div.subb_menu {
+  width: 1200px;
+  height: 55px;
+  margin: 0 auto;
+}
+section.sub1 div.sub_menu div.subb_menu ul {
+  text-transform: uppercase;
+}
+section.sub1 div.sub_menu div.subb_menu ul li {
+  display: inline-block;
+  font-size: 0;
+  height: 55px;
+}
+section.sub1 div.sub_menu div.subb_menu ul li:first-child {
+  background-color: rgba(5, 158, 159, 0.7);
+}
+section.sub1 div.sub_menu div.subb_menu ul li:hover {
+  text-decoration: underline;
+}
+section.sub1 div.sub_menu div.subb_menu ul li:hover:first-child {
+  text-decoration: none;
+}
+section.sub1 div.sub_menu div.subb_menu ul li a {
+  height: 100%;
+  line-height: 50px;
+  padding: 0 45px;
+  font-size: 16px;
+  color: #FFF;
+}
+section.sub1 div.sub_contents {
+  margin: 0 auto;
+  max-width: 1200px;
+  color: #555;
+  position: relative;
+}
+section.sub1 div.sub_contents .slid_content {
+  padding: 72px 0;
+  position: relative;
+}
+section.sub1 div.sub_contents .slid_content h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #111;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+section.sub1 div.sub_contents .slid_content .cprev {
+  position: absolute;
+  top: 50%;
+  width: 62px;
+  height: 62px;
+  margin-top: -31px;
+  left: 0;
+  background: url(../image/cprev.png) no-repeat;
+}
+section.sub1 div.sub_contents .slid_content .cnext {
+  position: absolute;
+  top: 50%;
+  width: 62px;
+  height: 62px;
+  margin-top: -31px;
+  right: 0;
+  background: url(../image/cnext.png) no-repeat;
+}
+section.sub1 div.sub_contents div.vision_top {
+  width: 1200px;
+  height: 420px;
+  position: relative;
+}
+section.sub1 div.sub_contents div.vision_top h3 {
+  text-align: center;
+  padding: 130px 0 30px;
+  font-size: 25px;
+  font-weight: 400;
+  color: #FFF;
+}
+section.sub1 div.sub_contents div.vision_top:after {
+  content: "";
+  width: 2000px;
+  height: 100%;
+  background: url(../image/vision_cover.png) no-repeat;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: -1;
+  margin-left: -1000px;
+}
+section.sub1 div.sub_contents div.vision_top span {
+  height: 60px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  width: 500px;
+  font-size: 50px;
+  color: #FFF;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+section.sub1 div.sub_contents .c_strategy {
+  position: relative;
+  width: 100%;
+}
+section.sub1 div.sub_contents .c_strategy h3 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: normal;
+  margin: 75px 0;
+}
+section.sub1 div.sub_contents .c_strategy h3 span {
+  display: block;
+  font-weight: bold;
+  font-size: 34px;
+  margin-top: 20px;
+}
+section.sub1 div.sub_contents .c_strategy h3 span:last-child {
+  width: 20px;
+  height: 3px;
+  background: #333;
+  text-align: center;
+  margin-top: 50px;
+  display: inline-block;
+  font-size: 0;
+}
+section.sub1 div.sub_contents .vision_flow {
+  padding-bottom: 70px;
+}
+section.sub1 div.sub_contents .vision_flow .vision_01 {
+  text-align: center;
+  position: relative;
+}
+section.sub1 div.sub_contents .vision_flow .vision_01 h4 {
+  color: #FFF;
+  left: 50px;
+  top: 80px;
+  position: absolute;
+  text-align: left;
+  font-weight: bold;
+  width: 123px;
+  height: 70px;
+  padding: 22px 0 0 45px;
+  background: url(../image/vision_bul.png) no-repeat 0 0;
+}
+section.sub1 div.sub_contents .vision_flow .vision_01 span {
+  display: block;
+  margin-bottom: 90px;
+}
+section.sub1 div.sub_contents .vision_flow:after {
+  content: "";
+  width: 2000px;
+  height: 100%;
+  background: url(../image/vision-w_cover.png) no-repeat;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: -10;
+  margin-left: -1000px;
 }

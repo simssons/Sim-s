@@ -14,21 +14,19 @@
     <script>
         $(function(){
 
-            $('.menu>ul>li').hover(function(){
-                $('.menu>ul>li').children('div').stop().slideDown()
 
-            },function(){
-                $('.menu>ul>li').children('div').stop().slideUp()
-            })
 
         });
     </script>
     <style type="text/css">
 
+
+
         *{margin:0;padding:0;}
         ul,ol{list-style:none;}
         img,video{vertical-align:top;}
         a{text-decoration:none;}
+
 
         header{
             border:1px #F00 solid;
@@ -81,7 +79,7 @@
          }
 
          .gnb .menu>ul>li div{
-             /*display:none;*/
+             display:none;
          }
 
 
@@ -160,12 +158,59 @@
            }
 
 
+
         .intro{
             background-color: #CCC;
             height:300px;
             position:relative;
-            z-index:1;
+            z-index:-1;
         }
+
+        @media screen and (max-width:1000px) {
+            header{
+                position:static;
+            }
+            header>div{
+                overflow:visible;
+            }
+
+            .gnb .menu{
+                position:absolute;
+                right:0;
+                height:100%;
+                width:223px;
+                background-color:#FFF;
+            }
+            .gnb .menu>ul>li{
+                background-color:#FFF;
+                text-align:left;
+            }
+
+            .gnb .menu>ul>li>a{
+
+                color:#000;
+                line-height:68px;
+            }
+
+            .gnb .menu>ul li a{
+                 padding:0 20px;
+            }
+
+            .gnb .menu>ul>li div{
+                padding:0 ;
+            }
+            .gnb .menu>ul>li:hover div{
+                display:block;
+            }
+
+
+            .gnb .menu>ul>li li{
+                background-color:#EEE;
+                border-top:1px #CCC solid;
+            }
+
+        }
+
 
      </style>
 </head>
